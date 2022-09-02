@@ -2,12 +2,6 @@
   .masthead {
     padding: 3em 0;
   }
-
-  @media screen and (max-width: 600px) {
-    .column-left {
-      display: none;
-    }
-  }
   @media screen and (max-width: 1800px) {
     .button {
       display: none;
