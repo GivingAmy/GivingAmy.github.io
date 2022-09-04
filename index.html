@@ -31,52 +31,61 @@
 </head>
 
 <body>
+
   <section class="about" id="about">
     <div class="max-width">
-      <h2 class="title">A Message From Your Girly Pop</h2>
-      <div class="about-content">
-        <div class="column-left" id="pic">
-          <img src="/Pictures/Picture.jpg" alt="">
-        </div>
-        <div class="column right">
-          <p>I am SO fucking proud of you, the driving and everything. More great and exciting things are to come!! I
-            Miss You Girly Pop</p>
+      <div id="current_date"></p>
+        <script>
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+        </script>
+        <h2 class="title">A Message From Your Girly Pop</h2>
+        <div class="about-content">
+          <div class="column-left" id="pic">
+            <img src="/Pictures/Picture.jpg" alt="">
+          </div>
+          <div class="column right">
+            <p>I am SO fucking proud of you, the driving and everything. More great and exciting things are to come!! I
+              Miss You Girly Pop</p>
             <h3>I Will See You In:</h3>
-          <p id="demo"></p>
-          
-          
+            <p id="demo"></p>
 
-          <script>
-            // Set the date we're counting down to
-            var countDownDate = new Date("Sep 9, 2022 08:37:25").getTime();
 
-            // Update the count down every 1 second
-            var x = setInterval(function () {
 
-              // Get today's date and time
-              var now = new Date().getTime();
+            <script>
+              // Set the date we're counting down to
+              var countDownDate = new Date("Sep 9, 2022 08:37:25").getTime();
 
-              // Find the distance between now and the count down date
-              var distance = countDownDate - now;
+              // Update the count down every 1 second
+              var x = setInterval(function () {
 
-              // Time calculations for days, hours, minutes and seconds
-              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                // Get today's date and time
+                var now = new Date().getTime();
 
-              // Display the result in the element with id="demo"
-              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s ";
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
 
-              // If the count down is finished, write some text
-              if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
-              }
-            }, 1000);
-          </script>
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the result in the element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                  + minutes + "m " + seconds + "s ";
+
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                  clearInterval(x);
+                  document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+              }, 1000);
+            </script>
+          </div>
         </div>
       </div>
-    </div>
   </section>
