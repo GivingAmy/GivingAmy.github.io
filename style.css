@@ -200,3 +200,108 @@ section .title::before {
   margin-bottom: 1em;
 }
 }
+
+
+
+/* about section styling */
+.about .about-content .left {
+  width: 45%;
+}
+
+.about .about-content .column-left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.about .about-content .right {
+  width: 55%;
+}
+
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+  color: #ac5fdb;
+}
+
+.about .about-content .right p {
+  text-align: justify;
+}
+
+.about .about-content .right a {
+  display: inline-block;
+  background: #ac5fdb;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #ac5fdb;
+  transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+  color: #ac5fdb;
+  background: none;
+}
+
+.right form .button-area button {
+  color: #fff;
+  display: block;
+  width: 160px !important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: #ac5fdb;
+  border: 2px solid #ac5fdb;
+  transition: all 0.3s ease;
+}
+
+.right form .button-area button:hover {
+  color: #ac5fdb;
+  background: none;
+}
+
+.fa-twitter,
+.fa-github,
+.fa-linkedin {
+  color: white;
+}
+
+.navbar-toggler-icon {
+  color: #ac5fdb;
+}
+
+
+@media (max-width: 991px) {
+
+  .services .max-width {
+     padding: 0;   
+   }
+  .services .serv-content,
+  .services .serv-content .card {
+     width: 100%; 
+  }
+  
+}
+
+@media only screen and (max-width: 1000px) {
+    .about .about-content .right {
+        width: 100%;
+    }
+  
+  .skills .skills-content .column {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
