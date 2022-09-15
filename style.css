@@ -402,24 +402,20 @@ img {
 
 
 
-.class {
-    font-size: 10px;
-}
-
 @media screen and (max-width:992px){
-    .class {
+    .column right {
         font-size: 20px;
     }
 }
 
 @media screen and (max-width:767px){
-        .class {
+        .column right {
             font-size: 24px;
         }
 }
 
 @media screen and (max-width:600px){
-        .class {
+        .column right {
             font-size: 32px;
         }
 }
