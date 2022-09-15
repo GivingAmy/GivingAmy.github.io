@@ -113,11 +113,7 @@ section .title::after {
   font-family: poppins;
 }
 .about,
-.about-content,
-.skills,
-.skills-content,
-.title::after,
-.text {
+.about-content{
   color: white;
 }
 
@@ -165,10 +161,6 @@ section .title::before {
   border-radius: 6px;
 }
 
-.about .about-content .right {
-  width: 55%;
-}
-
 .about .about-content .right .text {
   font-size: 25px;
   font-weight: 600;
@@ -211,9 +203,6 @@ section .title::before {
   border-radius: 6px;
 }
 
-.about .about-content .right {
-  width: 55%;
-}
 
 .about .about-content .right .text {
   font-size: 25px;
@@ -345,7 +334,6 @@ img {
   }
 }
 
-
 /* Pop Up Style*/
 #overlay {
   position: fixed;
@@ -354,24 +342,24 @@ img {
   width: 100%;
   height: 100%;
   background-color: #000;
-  filter:alpha(opacity=70);
-  -moz-opacity:0.7;
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
   -khtml-opacity: 0.7;
   opacity: 0.7;
   z-index: 100;
   display: none;
-  }
-  .cnt223 a{
+}
+.cnt223 a {
   text-decoration: none;
-  }
-  .popup{
+}
+.popup {
   width: 100%;
   margin: 0 auto;
   display: none;
   position: fixed;
   z-index: 101;
-  }
-  .cnt223{
+}
+.cnt223 {
   min-width: 600px;
   width: 600px;
   min-height: 150px;
@@ -382,26 +370,56 @@ img {
   padding: 15px 35px;
   border-radius: 5px;
   box-shadow: 0 2px 5px #000;
-  }
-  .cnt223 p{
+}
+.cnt223 p {
   clear: both;
-      color: #555555;
-      /* text-align: justify; */
-      font-size: 20px;
-      font-family: sans-serif;
-  }
-  .cnt223 p a{
+  color: #555555;
+  /* text-align: justify; */
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.cnt223 p a {
   color: #d91900;
   font-weight: bold;
-  }
-  .cnt223 .x{
+}
+.cnt223 .x {
   float: right;
   height: 35px;
   left: 22px;
   position: relative;
   top: -25px;
   width: 34px;
-  }
-  .cnt223 .x:hover{
+}
+.cnt223 .x:hover {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .about .about-content .right {
+      width: 100%;
   }
+}
+
+
+
+.class {
+    font-size: 10px;
+}
+
+@media screen and (max-width:992px){
+    .class {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:767px){
+        .class {
+            font-size: 24px;
+        }
+}
+
+@media screen and (max-width:600px){
+        .class {
+            font-size: 32px;
+        }
+}
