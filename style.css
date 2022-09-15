@@ -394,28 +394,25 @@ img {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 800px) {
-  .about .about-content .right {
-      width: 100%;
+@media (max-width: 991px) {
+
+  .services .max-width {
+     padding: 0;   
+   }
+  .services .serv-content,
+  .services .serv-content .card {
+     width: 100%; 
   }
+  
 }
 
-
-
-@media screen and (max-width:992px){
-    .column right {
-        font-size: 20px;
+@media only screen and (max-width: 1000px) {
+    .about .about-content .right {
+        width: 100%;
     }
-}
-
-@media screen and (max-width:767px){
-        .column right {
-            font-size: 24px;
-        }
-}
-
-@media screen and (max-width:600px){
-        .column right {
-            font-size: 32px;
-        }
+  
+  .skills .skills-content .column {
+    width: 100%;
+    margin-bottom: 1em;
+  }
 }
