@@ -1,102 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./style.css" />
-
-  <title>For You Girly</title>
-</head>
-
-<body>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
-  <script>
-    $(function () {
-      var overlay = $('<div id="overlay"></div>');
-      overlay.show();
-      overlay.appendTo(document.body);
-      $('.popup').show();
-      $('.close').click(function () {
-        $('.popup').hide();
-        overlay.appendTo(document.body).remove();
-        return false;
+    <title>For You Girly</title>
+  </head>
+  <body>
+    <!-- Reminder Pop-up JS + HTML -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.8.2.js"
+    ></script>
+    <script>
+      $(function () {
+        var overlay = $('<div id="overlay"></div>');
+        overlay.show();
+        overlay.appendTo(document.body);
+        $(".popup").show();
+        $(".close").click(function () {
+          $(".popup").hide();
+          overlay.appendTo(document.body).remove();
+          return false;
+        });
+        $(".x").click(function () {
+          $(".popup").hide();
+          overlay.appendTo(document.body).remove();
+          return false;
+        });
       });
-      $('.x').click(function () {
-        $('.popup').hide();
-        overlay.appendTo(document.body).remove();
-        return false;
-      });
-    });
-  </script>
-  <div class='popup'>
-    <div class='cnt223'>
-      <h1>REMINDER</h1>
-      <p>
-        Take Your Pill and Be Giving as FUCK!!<br>
-        Put the cream on the lucy cut
-        <br />
-        <br />
-        <a href='' class='close'>Close</a>
-      </p>
-    </div>
-  </div>
-  <section class="about" id="about">
-    <div class="max-width">
-      <div id="current_date">
+    </script>
+    <div class="popup">
+      <div class="cnt223">
+        <h1>REMINDER</h1>
+        <p>
+          Take Your Pill and Be Giving as FUCK!!<br />
+          Put the cream on the lucy cut
+          <br />
+          <br />
+          <a href="" class="close">Close</a>
         </p>
-        <script src="script.js"></script>
-        <h2 class="title">A Message From Your Girly Pop</h2>
-        <div class="about-content" style="text-align: center; width: 100%">
-          <div class="column-left" id="pic">
-            <img src="/Pictures/Pic9.jpg" alt="">
-          </div>
-          <div class="column right">
-            <p style="width: 100%">&emsp; HEY GIRLY POP!! YOU'RE GOING TO HAVE A GREAT DAY I KNOW IT. I hope the scratch from lucy bear is 
-              getting better and goes away soon. I must say I am excited to cook the grilled chicken and pasta in alfredo sauce for you because 
-              thats one of my best meals and I know its going to be giving. I wont put it in a zip lock this time either. I hope you had a good 
-              day yesterday and I want you to know that I am so proud of you for doing that paper and I know you're going to do amazing on it. I 
-              miss you girly pop and I cant wait to see you again!! I hoep you have a lovely day and enjoy the weekend. Ill be aroud if you need 
-              anything and just promise me you're going to stay a great mom and a pussy popping queen. Ill talk to you soon girly pop :)<br><br>
-              With Care, <br> Edward
-            </p>
-            <p>P.S. I will have new photos soon I just need to get them all neat and I will do better on this wesite I have some ideas so it looks
-              better on the phone, so sorry I fix soon ma'am. Miss you girly pop and I see you soon!!!
-            </p>
-            <h3>I Will See You In:</h3>
-            <p id="demo"></p>
-            <script src="script.js" style="align-content: center;"></script>
+      </div>
+    </div>
+
+    <section class="Message">
+      <div class="max-width">
+        <div id="current_date">
+          <script src="script.js"></script>
+          <h2 class="title">A Message From Your Girly Pop</h2>
+          <div class="main-content">
+            <div class="Main-Picture">
+              <img src="/Pictures/Pic9.jpg" alt="" />
+            </div>
+            <div class="Main-Message">
+              <p style="width: 100%">
+                &emsp; HEY GIRLY POP!! YOU'RE GOING TO HAVE A GREAT DAY I KNOW
+                IT. I hope the scratch from lucy bear is getting better and goes
+                away soon. I must say I am excited to cook the grilled chicken
+                and pasta in alfredo sauce for you because thats one of my best
+                meals and I know its going to be giving. I wont put it in a zip
+                lock this time either. I hope you had a good day yesterday and I
+                want you to know that I am so proud of you for doing that paper
+                and I know you're going to do amazing on it. I miss you girly
+                pop and I cant wait to see you again!! I hoep you have a lovely
+                day and enjoy the weekend. Ill be aroud if you need anything and
+                just promise me you're going to stay a great mom and a pussy
+                popping queen. Ill talk to you soon girly pop :)<br /><br />
+                With Care, <br />
+                Edward
+              </p>
+              <p>
+                P.S. I will have new photos soon I just need to get them all
+                neat and I will do better on this wesite I have some ideas so it
+                looks better on the phone, so sorry I fix soon ma'am. Miss you
+                girly pop and I see you soon!!!
+              </p>
+              <h3>I Will See You In:</h3>
+              <p id="demo"></p>
+              <script src="script.js"></script>
+            </div>
           </div>
         </div>
       </div>
-      <br><br><br>
-      <body>
-        </head>
-        <body>
-          <div class="slideshow-container">
-            <h1 style="text-align: center;">Such an AMAZING mom!!</h1>
-            <br><br><br>
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="/Pictures/Pic1.jpg" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="/Pictures/Pic4.jpg" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="/Pictures/Pic3.jpg" style="width:100%">
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-          </div>
-          <br>
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-          <script src="script.js"></script>
-        </body>
-  </section>
+      <div class="slideshow-container">
+        <h1 style="text-align: center;">Such an AMAZING mom!!</h1>
+        <br><br><br>
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="/Pictures/Pic1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="/Pictures/Pic4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="/Pictures/Pic3.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <script src="script.js"></script>
+    </body>
+</section>
+    </section>
+  </body>
+</html>
