@@ -67,14 +67,12 @@
   z-index: 101;
 }
 .cnt223 {
-  min-width: 600px;
-  width: 600px;
+  min-width: 300px;
+  width: 300px;
   min-height: 150px;
-  margin: 100px auto;
   background: #f3f3f3;
   position: relative;
   z-index: 103;
-  padding: 15px 35px;
   border-radius: 5px;
   box-shadow: 0 2px 5px #000;
 }
@@ -156,6 +154,10 @@
 .active,
 .dot:hover {
   background-color: #717171;
+}
+
+.mySlides {
+  display: none;
 }
 
 /* Fading animation */
