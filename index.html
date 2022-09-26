@@ -1,110 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./style.css" />
 
-    <title>For You Girly</title>
-  </head>
-  <body>
-    <!-- Reminder Pop-up JS + HTML -->
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.8.2.js"
-    ></script>
-    <script>
-      $(function () {
-        var overlay = $('<div id="overlay"></div>');
-        overlay.show();
-        overlay.appendTo(document.body);
-        $(".popup").show();
-        $(".close").click(function () {
-          $(".popup").hide();
-          overlay.appendTo(document.body).remove();
-          return false;
-        });
-        $(".x").click(function () {
-          $(".popup").hide();
-          overlay.appendTo(document.body).remove();
-          return false;
-        });
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <title>For You Girly</title>
+</head>
+
+<body>
+  <!-- Reminder Pop-up JS + HTML -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+  <script>
+    $(function () {
+      var overlay = $('<div id="overlay"></div>');
+      overlay.show();
+      overlay.appendTo(document.body);
+      $(".popup").show();
+      $(".close").click(function () {
+        $(".popup").hide();
+        overlay.appendTo(document.body).remove();
+        return false;
       });
-    </script>
-    <div class="popup">
-      <div class="cnt223">
-        <h1>REMINDER</h1>
-        <p>
-          Take Your Pill <br>Be Giving as FUCK!!<br/>
-          <br />
-          <br />
-          <a href="" class="close">Close</a>
-        </p>
-      </div>
+      $(".x").click(function () {
+        $(".popup").hide();
+        overlay.appendTo(document.body).remove();
+        return false;
+      });
+    });
+  </script>
+  <div class="popup">
+    <div class="cnt223">
+      <h1>REMINDER</h1>
+      <p>
+        Take Your Pill <br>Be Giving as FUCK!!<br />
+        <br />
+        <br />
+        <a href="" class="close">Close</a>
+      </p>
     </div>
+  </div>
 
-    <section class="Message">
-      <div class="max-width">
-        <div id="current_date">
-          <script src="script.js"></script>
-          <h2 class="title">A Message From Your Girly Pop</h2>
-          <div class="main-content">
-            <div class="Main-Picture">
-              <img src="/Pictures/Pic2.jpg" alt="" />
-              <!-- <video controls width="500" autoplay>
+  <section class="Message">
+    <div class="max-width">
+      <div id="current_date">
+        <script src="script.js"></script>
+        <h2 class="title">A Message From Your Girly Pop</h2>
+        <div class="main-content">
+          <div class="Main-Picture">
+            <img src="/Pictures/Pic2.jpg" alt="" />
+            <!-- <video controls width="500" autoplay>
                 <source src="/Pictures/IMG_3692.MOV"
                         type="video/webm">
                 <source src="/Pictures/IMG_3692.MOV"
                         type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video> -->
-            </div>
-            <div class="Main-Message">
-              <p style="width: 100%">
-                &emsp; HIII GIRLY POPPPP!!! I CANT WAIT FOR NEXT WEEK I AM SO FUCKING EXCITED!! I will 
-                always be here for you and lucy. I have gotten to material to cook your food for me to 
-                bring.  I also started to think of things to do when you're home on break and I thought
-                of: the mall, food, the mall, food, ice skating, fire pit, roko, the mall. Also I don't 
-                mind doing to drive back down with you as well I 100% will go and do it with you anytime
-                down or back. with that in mind I hope you have a great day girly pop!!!
-                <br/><br/>
-                Love Your Girly Pop, <br/>
-                Edward
-              </p>
-              <h3>I Will See You In:</h3>
-              <p id="demo"></p>
-              <script src="script.js"></script>
-            </div>
+          </div>
+          <div class="Main-Message">
+            <p style="width: 100%">
+              &emsp; So like why isn't it Friday already? I just want to be there with you again. I can't wait to go
+              roller blading, eat tacos, and just have a good time again. I'm also looking foward to seeing you again
+              that Thursday the 6th and not having to wait super long to see you again. Now Amy I am writing this at
+              9:13pm so I am not sure what has happened however if you already talked to Kasey no matter what happended
+              I am proud of you for talking to them. It's a bog thing to do and it takes a lot of courage for you to
+              tell
+              somebody you like them. I am sure we talked about it but I will say this. You're such a great person and
+              no
+              matter what happenes I will be here and there is no getting rid of me. I want nothing but the best for you
+              and I wholeheartly think that Kasey is the best for you. They really seem kind and I judge people very
+              harshly
+              so for me to say this is a big thing. I see how you feel about them and I see how you just get excited and
+              how
+              you truly care about them and from what I hear from you they feel the same. No matter what I am here for
+              you
+              and I will help you however I can. You're still my girly pop and I care about you so whatever you need I
+              will
+              always be right here. Girly Pops for life!!
+              <br /><br />
+              Love Your Girly Pop, <br />
+              Edward
+            </p>
+            <h3>I Will See You In:</h3>
+            <p id="demo"></p>
+            <script src="script.js"></script>
           </div>
         </div>
       </div>
-      <div class="slideshow-container">
-        <h1 style="text-align: center;">Such an AMAZING mom!!</h1>
-        <br><br><br>
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="/Pictures/Pic1.PNG" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="/Pictures/Pic3.jpg" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="/Pictures/Pic4.jpg" style="width:100%">
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <div class="slideshow-container">
+      <h1 style="text-align: center;">Such an AMAZING mom!!</h1>
+      <br><br><br>
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="/Pictures/Pic1.jpg" style="width:100%">
       </div>
-      <br>
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="/Pictures/Pic3.jpg" style="width:100%">
       </div>
-      <script src="script.js"></script>
-    </body>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="/Pictures/Pic4.jpeg style=" width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
 </section>
-    </section>
-  </body>
+</section>
+</body>
+
 </html>
