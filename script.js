@@ -25,7 +25,7 @@ document.getElementById("current_date").innerHTML =
   month + "/" + day + "/" + year;
 
 //Countdown JS
-var countDownDate = new Date("Oct 6, 2022 18:30:00").getTime();
+var countDownDate = new Date("Oct 13, 2022 20:00:00").getTime();
 var x = setInterval(function () {
   var now = new Date().getTime();
   var distance = countDownDate - now;
