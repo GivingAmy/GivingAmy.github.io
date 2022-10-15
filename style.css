@@ -64,7 +64,7 @@ body{
   text-decoration: none;
 }
 .popup {
-  width: 100%;
+  width: 75%;
   margin: 0 auto;
   display: none;
   position: fixed;
