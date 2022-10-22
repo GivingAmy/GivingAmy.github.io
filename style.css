@@ -275,7 +275,7 @@ img {
   transition: all 0.3s ease;
 }
 
-.experience .about .about-content .right a:hover {
+.experience .about .about-content .right a:hover button{
   color: #ac5fdb;
   background: none;
 }
