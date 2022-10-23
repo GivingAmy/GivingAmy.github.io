@@ -1,121 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>For You Girly</title>
-  </head>
-  <body>
-    <!-- Reminder Pop-up JS + HTML -->
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.8.2.js"
-    ></script>
-    <script>
-      $(function () {
-        var overlay = $('<div id="overlay"></div>');
-        overlay.show();
-        overlay.appendTo(document.body);
-        $(".popup").show();
-        $(".close").click(function () {
-          $(".popup").hide();
-          overlay.appendTo(document.body).remove();
-          return false;
-        });
-        $(".x").click(function () {
-          $(".popup").hide();
-          overlay.appendTo(document.body).remove();
-          return false;
-        });
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>For You Girly</title>
+</head>
+<header class="header">
+  <a href="./index.html" class="logo">Queen Amy</a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="./vent.html">Vent</a></li>
+    <li><a href="./jobs.html">Jobs</a></li>
+  </ul>
+</header>
+
+<body>
+  <!-- Reminder Pop-up JS + HTML -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+  <script>
+    $(function () {
+      var overlay = $('<div id="overlay"></div>');
+      overlay.show();
+      overlay.appendTo(document.body);
+      $(".popup").show();
+      $(".close").click(function () {
+        $(".popup").hide();
+        overlay.appendTo(document.body).remove();
+        return false;
       });
-    </script>
-    <div class="popup">
-      <div class="cnt223">
-        <h1 style="color: #d91900; opacity: 50%">REMINDER</h1>
-        <p>
-          Take Your Pill <br />Be Giving as FUCK!!<br />
-          <br />
-          <br />
-          <a href="" class="close" style="margin-right: 50px">Close</a>
-        </p>
-      </div>
+      $(".x").click(function () {
+        $(".popup").hide();
+        overlay.appendTo(document.body).remove();
+        return false;
+      });
+    });
+  </script>
+  <div class="popup">
+    <div class="cnt223">
+      <h1 style="color: #d91900; opacity: 50%">REMINDER</h1>
+      <p>
+        Take Your Pill <br />Be Giving as FUCK!!<br />
+        <br />
+        <br />
+        <a href="" class="close" style="margin-right: 50px">Close</a>
+      </p>
     </div>
-    <section class="Message">
-      <div class="max-width">
-        <div id="current_date">
-          <script src="script.js"></script>
-          <h2 class="title">A Message From Your Girly Pop</h2>
-          <div class="main-content">
-            <div class="Main-Picture">
-              <img src="Files/Pic8.jpg" alt="" />
-              <!-- <video controls width="500" autoplay>
+  </div>
+  <section class="Message">
+    <div class="max-width">
+      <div id="current_date" style="color: white;">
+        <script src="script.js"></script>
+        <h2 class="title">A Message From Your Girly Pop</h2>
+        <div class="main-content">
+          <div class="Main-Picture">
+            <img src="Files/Pic8.jpg" alt="" />
+            <!-- <video controls width="500" autoplay>
                 <source src="/Pictures/Movie.MP4"
                         type="video/webm">
                 <source src="/Pictures/Movie.MP4"
                         type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video> -->
-            </div>
-            <div class="Main-Message">
-              <p style="width: 100%">
-                &emsp;SO YOU CAN NOW VENT AND IT WILL JUST DISSAPEER BECASUE
-                FUCK EVERYTHING SOMETIMES YOU JUST NEED TO WRITE IT DOWN, NOT
-                EVEN IN A JOURNAL. The jobs will be next!!! So will the
-                pictures, again just need to collect. Now within the next week
-                or so I will have all of perals parts and I've already started
-                looking into how to do everything. Well girly pop lets just say
-                it's been one hell of a week and at the end of everything you
-                know what I really miss. Target and Pizza Hut. Idk why but I've
-                been craving some ghetto pizza hut and then walking around
-                target. Ahhh the memories. I hope you have a giving ass day
-                girly pop and if you need anything you let me know. (btw the
-                venting doesnt even get saved anywhere whatever you type will
-                stay until you refresh the page or press the GOODBYE button
-                :)<br />
-                &emsp;One last thing girly pop. Our father was talking to me
-                about saving money and all of that fun stuff and then he asked
-                about you. So here I am. IDK where you are finically however I
-                want to help you with whatever you need. SO if you have any
-                questions you can ask me or our father. In the comign days I
-                will be putting together a small packet of info for you so you
-                have even higher changes of suceeding then you already do.
-                <br /><br />
-                Love your Girly Pop and Bestie, <br />
-                Edward
-              </p>
-              <a href="./Files/Amy Binder.pdf">Binder!!</a>
-
-              <!-- <h3>I get to see you in:</h3> -->
-              <!-- <p id="demo"></p>
+          </div>
+          <div class="Main-Message">
+            <p style="width: 100%">
+              &emsp;JOB LINK WORKS!! I will be having more jobs but for now just
+              tell me if the jobs are what you're looking for :) AHHH Girly pop I
+              just got a crazy idea, now that I'm a closet expert, I redo your closet
+              and then fill it up with more clothes!! Also I hope your cotton-on stuff
+              ships soon because its giving and I think that it's a crime that they
+              didn't just give it to you before everyone else. Now over the past few
+              nights I've had some freetime I have been putting together some documents
+              for you including: Car Insurace Options, Finincial Savings Options, and
+              a little thing I always use to apply to jobs. I will have them all to you
+              in the next few days and they will all be buttons on this website. Soon I
+              may have to make a dropdown menu with everything. Hmmmmm something to think
+              about. Look at the top right. The three lines, click it. You have a page to
+              vent and a page that will be filled with jobs. OFC I will be making everything
+              more visually appealing and I will make sure that the pages have their themes
+              and are all giving.
+              <br><br>
+              Love your Girly Pop and Bestie, <br />
+              Edward
+            </p>
+            <a href="./Files/Amy Binder.pdf">Binder!!</a>
+            <!-- <h3>I get to see you in:</h3> -->
+            <!-- <p id="demo"></p>
             <script src="script.js"></script> -->
-            </div>
           </div>
         </div>
       </div>
-      <!-- Jobs -->
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <h2>Job 1</h2>
-            Human Resources Assistant for Global Contact Services<br />
-            <a
-              href="https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=3c6a5883-daa2-
-        4808-8a66-edce454e72c2&ccId=19000101_000001&jobId=447270&source=IN&lang=en_US&ittk=L3UVRGTU3J"
-              >Apply Here</a
-            >
-          </div>
-        </div>
-        <label for="freeform">Sometimes you just need to vent:</label>
-        <br />
-        <textarea id="freeform" name="freeform" rows="10" cols="50">I Fucking Hate...</textarea>
-        <br />
-        <div class="Refresh" style="color: #ac5fdb">
-          <button onClick="window.location.reload();">
-            SAY GOODBYE TO THE BULLSHIT
-          </button>
-        </div>
-      </div>
-    </section>
-  </body>
+    </div>
+  </section>
+</body>
 </html>
