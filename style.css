@@ -63,6 +63,7 @@
 
   .header .menu-icon {
     display: none;
+    color: white;
   }
 }
 
@@ -115,10 +116,11 @@
   padding: 28px 20px;
   position: relative;
   user-select: none;
+  color: white;
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: white;
   display: block;
   height: 2px;
   position: relative;
@@ -128,7 +130,7 @@
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: white;
   content: '';
   display: block;
   height: 100%;
@@ -381,7 +383,7 @@ body {
 
 img {
   height: 400px;
-  width: 400px;
+  width: 600px;
   object-fit: cover;
   border-radius: 6px;
 }
