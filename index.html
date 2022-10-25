@@ -1,105 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>For You Girly</title>
+  </head>
+  <header class="header">
+    <a href="./index.html" class="logo">Queen Amy</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"
+      ><span class="navicon"></span
+    ></label>
+    <ul class="menu">
+      <li>
+        <a href="./vent.html" style="color: white; font-size: 25px">Vent</a>
+      </li>
+      <li>
+        <a href="./jobs.html" style="color: white; font-size: 25px">Jobs</a>
+      </li>
+    </ul>
+  </header>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>For You Girly</title>
-</head>
-<header class="header">
-  <a href="./index.html" class="logo">Queen Amy</a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu">
-    <li><a href="./vent.html" style="color: white;font-size: 25px;">Vent</a></li>
-    <li><a href="./jobs.html" style="color: white;font-size: 25px;">Jobs</a></li>
-  </ul>
-</header>
-
-<body>
-  <!-- Reminder Pop-up JS + HTML -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
-  <script>
-    $(function () {
-      var overlay = $('<div id="overlay"></div>');
-      overlay.show();
-      overlay.appendTo(document.body);
-      $(".popup").show();
-      $(".close").click(function () {
-        $(".popup").hide();
-        overlay.appendTo(document.body).remove();
-        return false;
+  <body>
+    <!-- Reminder Pop-up JS + HTML -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.8.2.js"
+    ></script>
+    <script>
+      $(function () {
+        var overlay = $('<div id="overlay"></div>');
+        overlay.show();
+        overlay.appendTo(document.body);
+        $(".popup").show();
+        $(".close").click(function () {
+          $(".popup").hide();
+          overlay.appendTo(document.body).remove();
+          return false;
+        });
+        $(".x").click(function () {
+          $(".popup").hide();
+          overlay.appendTo(document.body).remove();
+          return false;
+        });
       });
-      $(".x").click(function () {
-        $(".popup").hide();
-        overlay.appendTo(document.body).remove();
-        return false;
-      });
-    });
-  </script>
-  <div class="popup">
-    <div class="cnt223" style="margin-left: 50px;">
-      <h1 style="color: #d91900; opacity: 50%; text-align: center;">REMINDERs</h1>
-      <p>
-        Take Your Pill <br />Be Giving as FUCK!!<br />
-        <br />
-        <br />
-        <a href="" class="close" style="text-align: center; color: #d91900; opacity: 50%">Close</a>
-      </p>
+    </script>
+    <div class="popup">
+      <div class="cnt223" style="margin-left: 50px">
+        <h1 style="color: #d91900; opacity: 50%; text-align: center">
+          REMINDERs
+        </h1>
+        <p>
+          Take Your Pill <br />Be Giving as FUCK!!<br />
+          <br />
+          <br />
+          <a
+            href=""
+            class="close"
+            style="text-align: center; color: #d91900; opacity: 50%"
+            >Close</a
+          >
+        </p>
+      </div>
     </div>
-  </div>
-  <section class="Message">
-    <div class="max-width">
-      <div id="current_date" style="color: white;margin-left: 260px;font-size: 25px;"></div>
-      <script src="script.js"></script>
-      <h2 class="title">A Message From Your Girly Pop</h2>
-      <div class="main-content">
-        <div class="Main-Picture">
-          <img src="Files/Pic12.jpg" alt="" />
-          <!-- <video controls width="500" autoplay>
+    <section class="Message">
+      <div class="max-width">
+        <div
+          id="current_date"
+          style="color: white; margin-left: 260px; font-size: 25px"
+        ></div>
+        <script src="script.js"></script>
+        <h2 class="title">A Message From Your Girly Pop</h2>
+        <div class="main-content">
+          <div class="Main-Picture">
+            <img src="Files/Pic12.jpg" alt="" />
+            <!-- <video controls width="500" autoplay>
                 <source src="/Pictures/Movie.MP4"
                         type="video/webm">
                 <source src="/Pictures/Movie.MP4"
                         type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video> -->
-        </div>
-        <div class="Main-Message">
-          <p style="width: 100%">
-            &emsp;Giry pop HIIII. Well if i texted you super early to wake you I am sorry. I also
-            hope you're feeling better and if you need anything just ask. So yes i gave you a mini
-            note/letter yesterday well because you're simpily the best. I feel like theres always 
-            more to talk about. Like the way your face is in the photo, its cute and funny. You're
-            like just stunning. My friends like you and think you're cool. My parents like you too 
-            like thats a first that everyone likes somebody I know so it just reassures me that you're 
-            just the fucking best. Oh yeah and I think you're cool too. You help me get that happy
-            chemcial in my braina nd I just smile. I tell ya I was looking at photos to choose for 
-            this site and all the ones I have of us or you or whatever it is they're just giving, and
-            your little smile, they way your head leans in or the way the filter makes you look funny. 
-            Oh girly pop what I'm trying to say is you're perfect and that I appreciate all the tiny
-            things you do for me that you may not even know you help with. You are my number 1, you are
-            the best girly pop ever, and I would give up everything I have just to be friends with you 
-            and thats not a joke Id legit give up everything for you. Or to help you. Im happy that at 
-            the end of everything we're still friends and just want you to know that I appreciate you 
-            and if I ever have to give a speech its going to start off "I'd like to thank my girly pop
-            for always being supportive and just being my #1 supporter" I dont have anythig new to add 
-            to the packet today as I did not have time, I am sorry. Same thing with jobs I just didn't 
-            have time. But I am working on writing code that will search and email me jobs every day 
-            for you. I hope you have a great pussy popping day and just know Im proud of you and I 
-            support you and you're doing great!!!
-            <br><br>
-            Love your Girly Pop and Bestie, <br />
-            Edwardo
-          </p>
-          <a href="./Files/GPHelp.pdf">CLICK ME!!</a>
-          <!-- <h3>I get to see you in:</h3> -->
-          <!-- <p id="demo"></p>
+          </div>
+          <div class="Main-Message">
+            <p style="width: 100%">
+              &emsp;Giry pop HIIII. Well if i texted you super early to wake you
+              I am sorry. I also hope you're feeling better and if you need
+              anything just ask. So yes i gave you a mini note/letter yesterday
+              well because you're simpily the best. I feel like theres always
+              more to talk about. Like the way your face is in the photo, its
+              cute and funny. You're like just stunning. My friends like you and
+              think you're cool. My parents like you too like thats a first that
+              everyone likes somebody I know so it just reassures me that you're
+              just the fucking best. Oh yeah and I think you're cool too. You
+              help me get that happy chemcial in my braina nd I just smile. I
+              tell ya I was looking at photos to choose for this site and all
+              the ones I have of us or you or whatever it is they're just
+              giving, and your little smile, they way your head leans in or the
+              way the filter makes you look funny. Oh girly pop what I'm trying
+              to say is you're perfect and that I appreciate all the tiny things
+              you do for me that you may not even know you help with. You are my
+              number 1, you are the best girly pop ever, and I would give up
+              everything I have just to be friends with you and thats not a joke
+              Id legit give up everything for you. Or to help you. Im happy that
+              at the end of everything we're still friends and just want you to
+              know that I appreciate you and if I ever have to give a speech its
+              going to start off "I'd like to thank my girly pop for always
+              being supportive and just being my #1 supporter". Amy the girly
+              pop > Baian I dont have anythig new to add to the packet today as
+              I did not have time, I am sorry. Same thing with jobs I just
+              didn't have time. But I am working on writing code that will
+              search and email me jobs every day for you. I hope you have a
+              great pussy popping day and just know Im proud of you and I
+              support you and you're doing great!!!
+              <br /><br />
+              Love your Girly Pop and Bestie, <br />
+              Edwardo
+            </p>
+            <a href="./Files/GPHelp.pdf">CLICK ME!!</a>
+            <!-- <h3>I get to see you in:</h3> -->
+            <!-- <p id="demo"></p>
             <script src="script.js"></script> -->
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-</body>
-
+    </section>
+  </body>
 </html>
