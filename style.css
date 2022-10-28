@@ -383,7 +383,7 @@ body {
 
 img {
   height: 400px;
-  width: 600px;
+  width: 400px;
   object-fit: cover;
   border-radius: 6px;
 }
