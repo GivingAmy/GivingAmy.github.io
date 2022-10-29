@@ -1,103 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>For You Girly</title>
+  </head>
+  <header class="header">
+    <a href="./index.html" class="logo">Queen Amy</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"
+      ><span class="navicon"></span
+    ></label>
+    <ul class="menu">
+      <li>
+        <a href="./vent.html" style="color: white; font-size: 25px">Vent</a>
+      </li>
+      <li>
+        <a href="./jobs.html" style="color: white; font-size: 25px">Jobs</a>
+      </li>
+    </ul>
+  </header>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>For You Girly</title>
-</head>
-<header class="header">
-  <a href="./index.html" class="logo">Queen Amy</a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu">
-    <li>
-      <a href="./vent.html" style="color: white; font-size: 25px">Vent</a>
-    </li>
-    <li>
-      <a href="./jobs.html" style="color: white; font-size: 25px">Jobs</a>
-    </li>
-  </ul>
-</header>
-
-<body>
-  <!-- Reminder Pop-up JS + HTML -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
-  <script>
-    $(function () {
-      var overlay = $('<div id="overlay"></div>');
-      overlay.show();
-      overlay.appendTo(document.body);
-      $(".popup").show();
-      $(".close").click(function () {
-        $(".popup").hide();
-        overlay.appendTo(document.body).remove();
-        return false;
+  <body>
+    <!-- Reminder Pop-up JS + HTML -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.8.2.js"
+    ></script>
+    <script>
+      $(function () {
+        var overlay = $('<div id="overlay"></div>');
+        overlay.show();
+        overlay.appendTo(document.body);
+        $(".popup").show();
+        $(".close").click(function () {
+          $(".popup").hide();
+          overlay.appendTo(document.body).remove();
+          return false;
+        });
+        $(".x").click(function () {
+          $(".popup").hide();
+          overlay.appendTo(document.body).remove();
+          return false;
+        });
       });
-      $(".x").click(function () {
-        $(".popup").hide();
-        overlay.appendTo(document.body).remove();
-        return false;
-      });
-    });
-  </script>
-  <div class="popup">
-    <div class="cnt223" style="margin-left: 50px">
-      <h1 style="color: #d91900; opacity: 50%; text-align: center">
-        REMINDERs
-      </h1>
-      <p>
-        Take Your Pill <br />Be Giving as FUCK!!<br />
-        <br />
-        <br />
-        <a href="" class="close" style="text-align: center; color: #d91900; opacity: 50%">Close</a>
-      </p>
-    </div>
-  </div>
-  <section class="Message">
-    <div class="max-width">
-      <div id="current_date" style="color: white; margin-left: 260px; font-size: 25px"></div>
-      <script src="script.js"></script>
-      <h2 class="title">A Message From Your Girly Pop</h2>
-      <div class="main-content">
-        <div class="Main-Picture">
-          <img src="Files/Pic6.jpg" alt="" />
-          <!-- <video controls width="500" autoplay>
-                <source src="/Pictures/Movie.MP4"
-                        type="video/webm">
-                <source src="/Pictures/Movie.MP4"
-                        type="video/mp4">
-                Sorry, your browser doesn't support embedded videos.
-            </video> -->
-        </div>
-        <div class="Main-Message">
-          <p style="width: 100%">
-            &emsp;YOU ARE PERFECT AND DONT LET ANYBODY SAY OTHERWISE
-            AND IF THEY DO ILL TELL THEM OFF RESPECTFULLY. I fucking love
-            tjis photo of us and your so cute in it!!! THE SMILEEEEE GETS MEEEEE
-            SO FUCKING BEAUTIFUL!! You're not just my girly pop, you're my queen,
-            bestie, and you're a sister a part of my life and a part of my life
-            I never want to change. You're an amzing person girly pop and you never
-            fail to impress me with what you do and I will always support
-            you and no matter what I will be PUSSY POPPING PROUD!! Click
-            the button for a letter!! Also just want to say I was looking
-            at all the photos I have of you and us and lucy and damn Amy
-            are you beautiful as FUCK
-            <br /><br />
-            Love your Girly Pop and Bestie, <br />
-            Edwardo
-            <br>
-          <h3>What's the Fit?</h3>
-          </p>
-          <a href="./Files/Letter 10-28.pdf">Letter</a>
-          <!-- <h3>Letter Countdown:</h3> -->
-          <!-- <p id="demo"></p>
-            <script src="script.js"></script> -->
-        </div>
+    </script>
+    <div class="popup">
+      <div class="cnt223" style="margin-left: 50px">
+        <h1 style="color: #d91900; opacity: 50%; text-align: center">
+          REMINDERs
+        </h1>
+        <p>
+          Take Your Pill <br />Be Giving as FUCK!!<br />
+          <br />
+          <br />
+          <a
+            href=""
+            class="close"
+            style="text-align: center; color: #d91900; opacity: 50%"
+            >Close</a
+          >
+        </p>
       </div>
     </div>
-  </section>
-</body>
-
+    <section class="Message">
+      <div class="max-width">
+        <div
+          id="current_date"
+          style="color: white; margin-left: 260px; font-size: 25px"
+        ></div>
+        <script src="script.js"></script>
+        <h2 class="title">A Message From Your Girly Pop</h2>
+        <div class="main-content">
+          <div class="Main-Picture">
+            <!-- <img src="Files/Pic6.jpg" alt="" /> -->
+            <video controls width="500" autoplay>
+                <source src="/Files/Vid1.MOV"
+                        type="video/webm">
+                <source src="/Files/Vid1.MOV"
+                        type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+          </div>
+          <div class="Main-Message">
+            <p style="width: 100%">
+              &emsp;I consider myself the luckiest person ever because I 
+              have the honnor to call you my best friend. I also get to 
+              have Lucy and Roko as well in my life. There's two things
+              I want to happen right now 1) Fast foward so I can see my 
+              uncle rlly quickly and 2) Fast foward so I can see you 
+              because I feel like it's been too long and I miss seeing
+              you. I also want to work on Pearl now because I got all 
+              the parts in!! Also, I am sorry but Cotton-on just said
+              fuck your order and it's just non existent anymore and 
+              they gave me my money back, so I will go to the store
+              and pick it up myself. Rude of them. Amy I just want to 
+              say that you're truly the fucking best and that I am so 
+              greatful to have you in my life and to be able to pop 
+              my pussy with you every day. I hope you have the best 
+              pussy popping day and if you need ANYTHING you can just 
+              call me or whatever you need!!
+              <br /><br />
+              Love your Girly Pop and Bestie, <br />
+              Edwardo
+              <br />
+            </p>
+            <a href="./Files/Letter 10-28.pdf">Letter</a>
+            <h3>I WILL SEE YOU IN</h3>
+            <p id="demo"></p>
+            <script src="script.js"></script>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
