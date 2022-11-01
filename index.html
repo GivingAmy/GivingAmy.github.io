@@ -1,114 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>For You Girly</title>
+  </head>
+  <header class="header">
+    <a href="./index.html" class="logo">Queen Amy</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"
+      ><span class="navicon"></span
+    ></label>
+    <ul class="menu">
+      <li>
+        <a href="./vent.html" style="color: white; font-size: 25px">Vent</a>
+      </li>
+      <li>
+        <a href="./jobs.html" style="color: white; font-size: 25px">Jobs</a>
+      </li>
+    </ul>
+  </header>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>For You Girly</title>
-</head>
-<header class="header">
-  <a href="./index.html" class="logo">Queen Amy</a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu">
-    <li>
-      <a href="./vent.html" style="color: white; font-size: 25px">Vent</a>
-    </li>
-    <li>
-      <a href="./jobs.html" style="color: white; font-size: 25px">Jobs</a>
-    </li>
-  </ul>
-</header>
-
-<body>
-  <!-- Reminder Pop-up JS + HTML -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
-  <script>
-    $(function () {
-      var overlay = $('<div id="overlay"></div>');
-      overlay.show();
-      overlay.appendTo(document.body);
-      $(".popup").show();
-      $(".close").click(function () {
-        $(".popup").hide();
-        overlay.appendTo(document.body).remove();
-        return false;
+  <body>
+    <!-- Reminder Pop-up JS + HTML -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.8.2.js"
+    ></script>
+    <script>
+      $(function () {
+        var overlay = $('<div id="overlay"></div>');
+        overlay.show();
+        overlay.appendTo(document.body);
+        $(".popup").show();
+        $(".close").click(function () {
+          $(".popup").hide();
+          overlay.appendTo(document.body).remove();
+          return false;
+        });
+        $(".x").click(function () {
+          $(".popup").hide();
+          overlay.appendTo(document.body).remove();
+          return false;
+        });
       });
-      $(".x").click(function () {
-        $(".popup").hide();
-        overlay.appendTo(document.body).remove();
-        return false;
-      });
-    });
-  </script>
-  <div class="popup">
-    <div class="cnt223" style="margin-left: 50px">
-      <h1 style="color: #d91900; opacity: 50%; text-align: center">
-        REMINDERs
-      </h1>
-      <p>
-        Take Your Pill <br />Be Giving as FUCK!!<br />
-        <br />
-        <br />
-        <a href="" class="close" style="text-align: center; color: #d91900; opacity: 50%">Close</a>
-      </p>
-    </div>
-  </div>
-  <section class="Message">
-    <div class="max-width">
-      <div id="current_date" style="color: white; margin-left: 260px; font-size: 25px"></div>
-      <script src="script.js"></script>
-      <h2 class="title">A Message From Your Girly Pop</h2>
-      <div class="main-content">
-        <div class="Main-Picture">
-          <img src="Files/Pic14.jpg" alt="" />
-          <!-- <video controls width="500" autoplay>
-                <source src="/Files/Vid1.MOV"
-                        type="video/webm">
-                <source src="/Files/Vid1.MOV"
-                        type="video/mp4">
-                Sorry, your browser doesn't support embedded videos.
-            </video> -->
-        </div>
-        <div class="Main-Message">
-          <p style="width: 100%">
-            &emsp;I really like your little smile/smirk here, like i caught you off gaurd and yet you're still so 
-            fucking beautiful. even that pic with Kasey at the party your smile is just so PERFECT and makes me happy.
-            Okay so girly pop I just want to say a few things. I know I always have a “few” things to say but as I always
-            say I could talk about you for ever. So as always last night I was thinking and my brain was all over the
-            place with thoughts. Then I thought about your website and how excited I am to see you. Well all of that got
-            me thinking about everything has come to be. I spoke about it in the letter but I don’t think I’ve ever told
-            you this little story or part of my life. So yeah we weren’t talking for awhile and everything and yes there
-            were a few instances where we would but they felt off to me and that’s why at those moments we didn’t really
-            become good friends again. I remember texting you when I was in Florida and things started to feel right
-            again. The convos were flowing and I got that feeling in me that I was getting before except this time it
-            was even stronger than what we had before and I was fucking eatting that shit up. However that time from when
-            started talking to the time we first hung out I was really like not doing good however when we started to 
-            hang out and everything I really started to feel better and just overall happier. That's what you do for me 
-            girly pop and I am forever greatful for you for all of that and it's why I always say if you need anything you 
-            can just ask me because I will do anything for you Amy I don't care what I have going on you're number one to 
-            me and you always will be. My pussy pops off for you and I know that everyday you're killing it and kicking ass 
-            while being giving as fuck. Im just so proud of you to see how far you've come from when we first met when you 
-            were already such an amazing person and now you're even more amazing and I never want this friendship and you 
-            being part of my family to ever end. You're so kind, so beautiful, and just so perfect. Keep kicking ass girly 
-            pop and remember no matter what I will be on your side to help, encourage, and support you in all of your 
-            choices that you make. I can't wait to see you and your kid and Pearl again I am so fucking excited!!! Have a 
-            pussy popping dayyyyy and know if you need me you can text me, call me, or whatever you need I will always be 
-            here for you. Stay giving and know you're loved by ME!!
-            <br /><br />
-            Love your Girly Pop and Bestie, <br />
-            Edwardo
-            <br />
-          </p>
-          <a href="./Files/Letter 10-28.pdf">Letter</a>
-          <h3>I WILL SEE YOU IN</h3>
-          <p id="demo"></p>
-          <script src="script.js"></script>
-        </div>
+    </script>
+    <div class="popup">
+      <div class="cnt223" style="margin-left: 50px">
+        <h1 style="color: #d91900; opacity: 50%; text-align: center">
+          REMINDERs
+        </h1>
+        <p>
+          Take Your Pill <br />Be Giving as FUCK!!<br />
+          <br />
+          <br />
+          <a
+            href=""
+            class="close"
+            style="text-align: center; color: #d91900; opacity: 50%"
+            >Close</a
+          >
+        </p>
       </div>
     </div>
-  </section>
-</body>
-
+    <section class="Message">
+      <div class="max-width">
+        <div
+          id="current_date"
+          style="color: white; margin-left: 260px; font-size: 25px"
+        ></div>
+        <script src="script.js"></script>
+        <h2 class="title">A Message From Your Girly Pop</h2>
+        <div class="main-content">
+          <div class="Main-Picture">
+            <!-- <img src="Files/Pic14.jpg" alt="" /> -->
+            <video controls width="500" autoplay>
+              <source src="/Files/Vid2.MP4" type="video/webm" />
+              <source src="/Files/Vid2.MP4" type="video/mp4" />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </div>
+          <div class="Main-Message">
+            <p style="width: 100%">
+              &emsp;Amy you're the type of person who I know will always be
+              there for me and I cannot thank you enough for all you've done for
+              me recently. Talking to you about everything going on is just
+              super helpful and it really just allows me to calm down and take
+              things slowly. I tend to get overwhelmed a lot and whenever I talk
+              to you I don't feel that way because every time you talk to me you
+              show me that I should focus on my next step and my journey to the
+              future and I should not worry about what's out of my control. I
+              know that no matter what happenes you will be there and that to me
+              means the world. lol not me getting emotional rn. Amy your support
+              means the fucking world to me and the video above I watch pretty
+              often when I feel sad or something or I want to give up. You say
+              "Not around here partner" and that makes me think and want to keep
+              going. You motivate me, support me, and make me happy. I had a
+              test done and one of the results was to view my dopamine levels
+              (the happy chemical). Back in January when we weren't talking it
+              was at a low of like 325 when the average is 450ish. Well now just
+              10 months later and six months of us being friends and even family
+              that test showed it at over 700 and I 100% know it's because of
+              you. So when I say you make me happy I have science on my side to
+              prove it. But I'm serious Amy, you make me feel safe, wanted, and
+              just one of the luckiest people ever to have your support. Even
+              Sally when I was texting her for her birthday, she's so kind to me
+              and I cannot thank you two enough and I want you two to know that
+              if I can ever do anything please just ask me I will do it. I love
+              you two and I appreciate all you do for me. Thank you for all the
+              support and love. I hope you have a great fucking day and know
+              that you're the world to me and I love you. I know Tuesday's are
+              your long day so if you need anything or help with anything just
+              ask I'll do it!!
+              <br /><br />
+              Love your Girly Pop and Bestie, <br />
+              Edwardo
+              <br />
+            </p>
+            <a href="./Files/Amy Binder.pdf">Biner ;)</a>
+            <h3>I WILL SEE YOU IN</h3>
+            <p id="demo"></p>
+            <script src="script.js"></script>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
