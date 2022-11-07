@@ -1,73 +1,3 @@
-@media only screen and (max-width: 500px) {
-  .masthead {
-    padding: 3em 0;
-  }
-
-  .html {
-    max-width: 800px;
-  }
-
-  @media (max-width: 991px) {
-    .Message .main-content .max-width {
-      padding: 0;
-    }
-
-    p {
-      width: 100%;
-    }
-  }
-
-  @media only screen and (max-width: 1000px) {
-    .Message .main-content .Main-Message {
-      width: 100%;
-    }
-
-    .skills .skills-content .column {
-      width: 100%;
-      margin-bottom: 1em;
-    }
-  }
-
-  @media only screen and (max-width: 800px) {
-    .about .about-content .right {
-      width: 100%;
-    }
-
-    .skills .skills-content .column {
-      width: 100%;
-      margin-bottom: 1em;
-    }
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .Message .main-content .Main-Message {
-    width: 100%;
-  }
-}
-
-@media (min-width: 48em) {
-  .header li {
-    float: left;
-  }
-
-  .header li a {
-    padding: 20px 30px;
-  }
-
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-
-  .header .menu-icon {
-    display: none;
-    color: white;
-  }
-}
-
-
 .header {
   background-color: #ffb6c1;
   position: sticky;
@@ -112,7 +42,6 @@
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
-  float: right;
   padding: 28px 20px;
   position: relative;
   user-select: none;
@@ -321,16 +250,6 @@ h1 {
   }
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
-  }
-}
-
 .html,
 body {
   scroll-behavior: smooth;
@@ -469,5 +388,73 @@ body {
     width: 100%;
     display: block;
     margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .masthead {
+    padding: 3em 0;
+  }
+
+  .html {
+    max-width: 800px;
+  }
+
+  @media (max-width: 991px) {
+    .Message .main-content .max-width {
+      padding: 0;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .Message .main-content .Main-Message {
+      width: 100%;
+    }
+
+    .skills .skills-content .column {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .about .about-content .right {
+      width: 100%;
+    }
+
+    .skills .skills-content .column {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Message .main-content .Main-Message {
+    width: 100%;
+  }
+}
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    padding: 20px 30px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .menu-icon {
+    display: none;
+    color: white;
   }
 }
