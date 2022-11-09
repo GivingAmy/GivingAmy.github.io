@@ -301,8 +301,8 @@ body {
 }
 
 img {
-  height: 800px;
-  width: 400px;
+  height: 600px;
+  width: 600px;
   object-fit: cover;
   border-radius: 6px;
 }
