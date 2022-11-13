@@ -301,8 +301,8 @@ body {
 }
 
 img {
-  height: 600px;
-  width: 600px;
+  height: 400px;
+  width: 400px;
   object-fit: cover;
   border-radius: 6px;
 }
@@ -312,7 +312,7 @@ p {
   font-size: 25px;
   font-weight: 100;
   width: 100%;
-  text-align: center;
+  text-align: left;
   display: inline-block;
   color: #fff;
   font-size: 20px;
