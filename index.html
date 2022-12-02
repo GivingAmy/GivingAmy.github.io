@@ -1,106 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>For My #1</title>
+  </head>
+  <header class="header" style="width: 100%">
+    <a href="./index.html" class="logo">Queen Amy</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"
+      ><span class="navicon"></span
+    ></label>
+    <ul class="menu" style="margin-left: 90px">
+      <li>
+        <a href="./vent.html" style="color: white; font-size: 25px">Vent</a>
+      </li>
+      <li>
+        <a href="./jobs.html" style="color: white; font-size: 25px">Jobs</a>
+      </li>
+    </ul>
+  </header>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>For My #1</title>
-</head>
-<header class="header" style="width: 100%;">
-  <a href="./index.html" class="logo">Queen Amy</a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu" style="margin-left: 90px;">
-    <li>
-      <a href="./vent.html" style="color: white; font-size: 25px">Vent</a>
-    </li>
-    <li>
-      <a href="./jobs.html" style="color: white; font-size: 25px">Jobs</a>
-    </li>
-  </ul>
-</header>
-
-<body>
-  <!-- Reminder Pop-up JS + HTML -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
-  <script>
-    $(function () {
-      var overlay = $('<div id="overlay"></div>');
-      overlay.show();
-      overlay.appendTo(document.body);
-      $(".popup").show();
-      $(".close").click(function () {
-        $(".popup").hide();
-        overlay.appendTo(document.body).remove();
-        return false;
+  <body>
+    <!-- Reminder Pop-up JS + HTML -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.8.2.js"
+    ></script>
+    <script>
+      $(function () {
+        var overlay = $('<div id="overlay"></div>');
+        overlay.show();
+        overlay.appendTo(document.body);
+        $(".popup").show();
+        $(".close").click(function () {
+          $(".popup").hide();
+          overlay.appendTo(document.body).remove();
+          return false;
+        });
+        $(".x").click(function () {
+          $(".popup").hide();
+          overlay.appendTo(document.body).remove();
+          return false;
+        });
       });
-      $(".x").click(function () {
-        $(".popup").hide();
-        overlay.appendTo(document.body).remove();
-        return false;
-      });
-    });
-  </script>
-  <div class="popup">
-    <div class="cnt223" style="margin-left: 50px">
-      <h1 style="color: #d91900; opacity: 50%; text-align: center">
-        REMINDERS
-      </h1>
-      <p>
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Take Your Pill
-        <br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Start the Process To return your 
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;amazon book (I can help if needed)
-        <br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Be Giving as FUCK!!<br />
-        <br />
-        <br />
-        <a href="" class="close"
-          style="text-align: center; color: #d91900; opacity: 50%">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Close</a>
-      </p>
+    </script>
+    <div class="popup">
+      <div class="cnt223" style="margin-left: 50px">
+        <h1 style="color: #d91900; opacity: 50%; text-align: center">
+          REMINDERS
+        </h1>
+        <p>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Take
+          Your Pill
+          <br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Start the
+          Process To return your
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;amazon book (I
+          can help if needed)
+          <br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Be Giving
+          as FUCK!!<br />
+          <br />
+          <br />
+          <a
+            href=""
+            class="close"
+            style="text-align: center; color: #d91900; opacity: 50%"
+            >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Close</a
+          >
+        </p>
+      </div>
     </div>
-  </div>
-  <section class="Message">
-    <div class="max-width">
-      <script src="script.js"></script>
-      <h2 style="text-align: center;color: white;"><strong>For YOU, My girly pop!!</strong></h2>
-      <div class="main-content">
-        <div class="Main-Picture">
-          <img src="Files/Pic2.jpg" alt="" />
-          <!-- <video controls width="500" autoplay>
+    <section class="Message">
+      <div class="max-width">
+        <script src="script.js"></script>
+        <h2 style="text-align: center; color: white">
+          <strong>For YOU, My girly pop!!</strong>
+        </h2>
+        <div class="main-content">
+          <div class="Main-Picture">
+            <img src="Files/Pic3.jpg" alt="" />
+            <!-- <video controls width="500" autoplay>
               <source src="/Files/MOV1.MP4" type="video/webm" />
               <source src="/Files/MOV1.MP4" type="video/mp4" />
               Sorry, your browser doesn't support embedded videos.
             </video> -->
-        </div>
-        <div class="Main-Message">
-          <p style="width: 100%; font-size: 2.2vh">
-            &emsp;GIRLYYY POPPPPP HELLOOOOO!!!! I was cleaning my room and I found the 
-            photo booth strip photos again and I just loved seeing it because it was a 
-            giving ass time with you and just some of the best memories with you. I 
-            remember we went back to the mall just to get our pics done because we got 
-            our hair done lmao, we were giving as fuckkk.I also want to thank you for 
-            just all the support and encouragemnt that you've given me recently and it 
-            means a lot to me and it has had a very positive effect on me. From celebrating 
-            my accomplishments with me to talking to me when I'm feeling a little down from 
-            others comments. You really help me and make a chnage in my life and I cannot say 
-            thank you enough, it  means the world to me and if you ever need anything you 
-            just ask and let me know. Have an amazing pussy popping day and I hope that 
-            you're feeling better!!!
-            <br>
-            <br>Love Your Girly Pop!!!<br>
-            Edwardo 💗
-            <br />
-          </p>
-          <!-- <a href="./Files/Letter 11-4.pdf">LETTER ;)</a> -->
-          <!-- <h2>I WILL SEE YOU IN</h2>
+          </div>
+          <div class="Main-Message">
+            <p style="width: 100%; font-size: 2.2vh">
+              &emsp;Helloooooo girlyyy popppp. UGH THE PIC HAS MY TWO FAVORITE
+              PEOPLE IN IT GIRLY POP AND LUCY BEAR. YOU'RE BOTH SO FUCKING
+              GIVING AND OMG UR HAIR IS EVEN MORE GIVINGGG!! I hope you're
+              feeling better and not sick anymore. The other night I was
+              thinking and just a lot was going on in my head and something came
+              into my head. I said the other day how thankful I am for you
+              always being there and suporting me and thinking of that reall
+              just made me feel as if maybe I haven't been a great friend
+              recently and I feel like I could ask how you are more or talk
+              about you more because I feel sometimes I talk a lot about things
+              I do and feel and I feel bad that I don't really ask you how
+              you're doing and I'm sorry if I've been a bit one sided. Don't get
+              me wrong I do really care about you and I want you to know that no
+              matter what it is that you need I am here for you. I just feel
+              that maybe I've been one sided and I'm sorry about that girly pop.
+              If you ever do need to talk about anything or if you're free and
+              you wanna chat just lmk I'm here for you. I care about you a lot
+              girl and if there's anything I can do for you please just ask.
+              You're my #1 and my girly pop and I love and care about you a lot
+              and I'll do anything for you , so just ask. I hope you have a
+              great pussy popping day. Also, anagin your hair yesterday was just
+              do fucking giving and I loved it. HAVE A GREAT DAY!!
+              <br />
+              <br />Love Your Girly Pop!!!<br />
+              Edwardo 💗
+              <br />
+            </p>
+            <!-- <a href="./Files/Letter 11-4.pdf">LETTER ;)</a> -->
+            <!-- <h2>I WILL SEE YOU IN</h2>
           <p id="demo"></p>
           <script src="script.js"></script> -->
+          </div>
+          <br />
+          <br />
         </div>
-        <br>
-        <br>
       </div>
-    </div>
-  </section>
-</body>
-
+    </section>
+  </body>
 </html>
