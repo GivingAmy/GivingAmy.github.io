@@ -1,107 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>For My #1</title>
+  </head>
+  <header class="header" style="width: 100%">
+    <a href="./index.html" class="logo">Queen Amy</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"
+      ><span class="navicon"></span
+    ></label>
+    <ul class="menu" style="margin-left: 90px">
+      <li>
+        <a href="./vent.html" style="color: white; font-size: 25px">Vent</a>
+      </li>
+      <li>
+        <a href="./jobs.html" style="color: white; font-size: 25px">Jobs</a>
+      </li>
+    </ul>
+  </header>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>For My #1</title>
-</head>
-<header class="header" style="width: 100%">
-  <a href="./index.html" class="logo">Queen Amy</a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu" style="margin-left: 90px">
-    <li>
-      <a href="./vent.html" style="color: white; font-size: 25px">Vent</a>
-    </li>
-    <li>
-      <a href="./jobs.html" style="color: white; font-size: 25px">Jobs</a>
-    </li>
-  </ul>
-</header>
-
-<body>
-  <!-- Reminder Pop-up JS + HTML -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
-  <script>
-    $(function () {
-      var overlay = $('<div id="overlay"></div>');
-      overlay.show();
-      overlay.appendTo(document.body);
-      $(".popup").show();
-      $(".close").click(function () {
-        $(".popup").hide();
-        overlay.appendTo(document.body).remove();
-        return false;
+  <body>
+    <!-- Reminder Pop-up JS + HTML -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.8.2.js"
+    ></script>
+    <script>
+      $(function () {
+        var overlay = $('<div id="overlay"></div>');
+        overlay.show();
+        overlay.appendTo(document.body);
+        $(".popup").show();
+        $(".close").click(function () {
+          $(".popup").hide();
+          overlay.appendTo(document.body).remove();
+          return false;
+        });
+        $(".x").click(function () {
+          $(".popup").hide();
+          overlay.appendTo(document.body).remove();
+          return false;
+        });
       });
-      $(".x").click(function () {
-        $(".popup").hide();
-        overlay.appendTo(document.body).remove();
-        return false;
-      });
-    });
-  </script>
-  <div class="popup">
-    <div class="cnt223" style="margin-left: 50px">
-      <h1 style="color: #d91900; opacity: 50%; text-align: center">
-        REMINDERS
-      </h1>
-      <p>
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Take
-        Your Pill
-        <br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Be Giving
-        as FUCK!!<br />
-        <br />
-        <br />
-        <a href="" class="close"
-          style="text-align: center; color: #d91900; opacity: 50%">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Close</a>
-      </p>
+    </script>
+    <div class="popup">
+      <div class="cnt223" style="margin-left: 50px">
+        <h1 style="color: #d91900; opacity: 50%; text-align: center">
+          REMINDERS
+        </h1>
+        <p>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Take
+          Your Pill
+          <br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Be Giving
+          as FUCK!!<br />
+          <br />
+          <br />
+          <a
+            href=""
+            class="close"
+            style="text-align: center; color: #d91900; opacity: 50%"
+            >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Close</a
+          >
+        </p>
+      </div>
     </div>
-  </div>
-  <section class="Message">
-    <div class="max-width">
-      <script src="script.js"></script>
-      <h2 style="text-align: center; color: white">
-        <strong>For YOU, My girly pop!!</strong>
-      </h2>
-      <div class="main-content">
-        <div class="Main-Picture">
-          <img src="Files/Pic4.jpg" alt="" />
-          <!-- <video controls width="500" autoplay>
+    <section class="Message">
+      <div class="max-width">
+        <script src="script.js"></script>
+        <h2 style="text-align: center; color: white">
+          <strong>For YOU, My girly pop!!</strong>
+        </h2>
+        <div class="main-content">
+          <div class="Main-Picture">
+            <img src="Files/Pic5.jpg" alt="" />
+            <!-- <video controls width="500" autoplay>
               <source src="/Files/MOV1.MP4" type="video/webm" />
               <source src="/Files/MOV1.MP4" type="video/mp4" />
               Sorry, your browser doesn't support embedded videos.
             </video> -->
-        </div>
-        <div class="Main-Message">
-          <p style="width: 100%; font-size: 2.2vh">
-            &emsp;HII QUEENNNNNN!!! I hope you had a great night girly
-            and that you have a great day. So I was wondering what song
-            did you want for the girly pop wrapped? Idk if we do one song
-            or like a few of them yk. Also before I wrote this I was just
-            laying in bed and I had roko and dino with me and I was just
-            relaxing and I thought about talking to you about the whole
-            Baian thing and I want to say thank you for supporting me with
-            the message and everything I really do feel better. No response
-            but I feel better. So thank you for being the best suportive giving
-            girly pop out there!! I HOPE YOU HAVE A PUSSY POPPING DAY AND IF
-            YOU NEED ANYHTING JUTS LMK!!!
-            <br />
-            <br />Love Your Girly Pop!!!<br />
-            Edwardo 💗
-            <br />
-          </p>
-          <!-- <a href="./Files/Letter 11-4.pdf">LETTER ;)</a> -->
-          <!-- <h2>I WILL SEE YOU IN</h2>
+          </div>
+          <div class="Main-Message">
+            <p style="width: 100%; font-size: 2.2vh">
+              &emsp;Okay so like lets just take a look at this photo for a
+              moment and let me tell you why its so giving. First off its a
+              photo of the most gving person out there YOU, second off the fit
+              is beautiful butttt not as beautiful as that little smile behind
+              your phone. Also your hair is just very nice and everything put
+              together is just the best in the world. Also I was working on the
+              girly poped wrapped and I really can't get a song set because
+              they're just not hitting right yk. So if you have any ideas lmk
+              but if not thats okay too because I have a vew other ideas they're
+              just not 100% like the orgianl. I hope you have a pussy popping
+              day you giving ass queen and lmk if you need anythingggg!!!
+              <br />
+              <br />Love Your Girly Pop!!!<br />
+              Edwardo 💗
+              <br />
+            </p>
+            <!-- <a href="./Files/Letter 11-4.pdf">LETTER ;)</a> -->
+            <!-- <h2>I WILL SEE YOU IN</h2>
           <p id="demo"></p>
           <script src="script.js"></script> -->
+          </div>
+          <br />
+          <br />
         </div>
-        <br />
-        <br />
       </div>
-    </div>
-  </section>
-</body>
-
+    </section>
+  </body>
 </html>
