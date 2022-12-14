@@ -7,20 +7,22 @@
   <link rel="stylesheet" href="./style.css" />
   <title>For My #1</title>
 </head>
-<header class="header" style="width: 100%">
-  <a href="./index.html" class="logo">Queen Amy</a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu" style="margin-left: 90px">
-    <li>
-      <a href="./vent.html" style="color: white; font-size: 25px">Vent</a>
-    </li>
-    <li>
-      <a href="./jobs.html" style="color: white; font-size: 25px">Jobs</a>
-    </li>
-  </ul>
+<!-- Navigation bar -->
+<header class="header">
+  <!-- Logo -->
+  <a href="index.html" class="logo">GP Amy</a>
+  <!-- Hamburger icon -->
+  <input class="side-menu" type="checkbox" id="side-menu" />
+  <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+  <!-- Menu -->
+  <nav class="nav">
+    <ul class="menu">
+      <li><a href="./vent.html">Vent</a></li>
+      <li><a href="./jobs.html">Jobs</a> </li>
+      <!-- <li><a href="#">About</a></li> -->
+    </ul>
+  </nav>
 </header>
-
 <body>
   <!-- Reminder Pop-up JS + HTML -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
@@ -61,13 +63,30 @@
   </div>
   <section class="Message">
     <div class="max-width">
-      <script src="script.js"></script>
-      <h2 style="text-align: center; color: white">
+      <script>
+        $(function () {
+          var overlay = $('<div id="overlay"></div>');
+          overlay.show();
+          overlay.appendTo(document.body);
+          $(".popup").show();
+          $(".close").click(function () {
+            $(".popup").hide();
+            overlay.appendTo(document.body).remove();
+            return false;
+          });
+          $(".x").click(function () {
+            $(".popup").hide();
+            overlay.appendTo(document.body).remove();
+            return false;
+          });
+        });
+      </script>
+      <h2 style="text-align: center; color: white; margin-top: 50px;margin-left: 10px;">
         <strong>For YOU, My girly pop!!</strong>
       </h2>
       <div class="main-content">
         <div class="Main-Picture">
-          <img src="Files/Pic2.jpg" alt="" />
+          <img src="Files/Pic3.jpg" alt="" />
           <!-- <video controls width="500" autoplay>
               <source src="/Files/MOV1.MP4" type="video/webm" />
               <source src="/Files/MOV1.MP4" type="video/mp4" />
@@ -76,28 +95,59 @@
         </div>
         <div class="Main-Message">
           <p style="width: 100%; font-size: 2.2vh">
-            &emsp;THROW BACKKK, this is one of the first times I met
-            your wonderful kid Lucy Bear!! Just a reminder of how
-            wonderful of a mom you are. Also your head peeking in
-            with that amazing ass smile of yours really makes this a
-            great photo. So girly pop I just have to say I'm just so
-            excited for today for the package to arrive because I had
-            amazon slip in a little something extra, and no its no drugs
-            incase somebody else reads this. But I just want to say I am
-            very proud of you for everything this semester so far and I
-            know all that hard work and long hours are going to pay off
-            for you. You're doing amazing and just let me know if you need
-            anything. Have a great PUSSY POPPING day girly pop and good luck
-            if you have finals or anything!!
-
+            &emsp;Just a photo of the two most giving people to ever exist. I can't wait to pop our pussys agian
+            and just have a good timeeeee. Im just so proud of you for getting your finals done and just being the
+            smarty pants that you are. I want to tell you this, It doesnt matter what people are doing now, it doesnt
+            matter what people say they're going to do. At the end of the day all you can do is look at their past and see
+            how they are now, if the change is drastic and negative and you don't talk to them, you made the right choice. Even
+            if the chnage was postiving it doesnt mean youve made a bad choice. Somebody always bing honest and loyal is very
+            hard to find, its one of the reasons you're one of the most important people to me because you're always honest and
+            I know youre going to be real with me. People do wild shit but at the end of the day all that matters is that you
+            stick to the choice you made, fuck whatever somebody is doing because most likely they're doing it because they have
+            no other choice. When I cut somebody off, if I see them or hear something about them I compare it to the version of
+            them I knew, and if I see a drastic negative chnage it just proves my point for me. You're better than this friend
+            and its their loss when they decided to become a different person because they lost an amazing person, they just didn't
+            realize it and thats on them. You deserve nothing but the best and know that. I hope you have a great PUSSY POPPING day girly
+            and if you need anything im right here.
             <br />Love Your Girly Pop!!!<br />
             Edwardo 💗
             <br />
           </p>
-          <a href="./Files/Letter 12-9.pdf">LETTER ;)</a>
-          <!-- <h2>I WILL SEE YOU IN</h2>
-          <p id="demo"></p>
-          <script src="script.js"></script> -->
+          <a style="margin-bottom: 5px;" href="./Files/Letter 12-9.pdf">LETTER ;)</a>
+          <h2>I WILL SEE YOU IN</h2>
+          <!-- Display the countdown timer in an element -->
+          <p style="margin-top: 5px;"id="demo"></p>
+
+          <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Dec 17, 2022 17:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function () {
+
+              // Get today's date and time
+              var now = new Date().getTime();
+
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+              // Display the result in the element with id="demo"
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+              // If the count down is finished, write some text
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+          </script>
         </div>
         <br />
         <br />
@@ -105,5 +155,4 @@
     </div>
   </section>
 </body>
-
 </html>
