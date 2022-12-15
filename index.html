@@ -1,158 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>For My #1</title>
-</head>
-<!-- Navigation bar -->
-<header class="header">
-  <!-- Logo -->
-  <a href="index.html" class="logo">GP Amy</a>
-  <!-- Hamburger icon -->
-  <input class="side-menu" type="checkbox" id="side-menu" />
-  <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-  <!-- Menu -->
-  <nav class="nav">
-    <ul class="menu">
-      <li><a href="./vent.html">Vent</a></li>
-      <li><a href="./jobs.html">Jobs</a> </li>
-      <!-- <li><a href="#">About</a></li> -->
-    </ul>
-  </nav>
-</header>
-<body>
-  <!-- Reminder Pop-up JS + HTML -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
-  <script>
-    $(function () {
-      var overlay = $('<div id="overlay"></div>');
-      overlay.show();
-      overlay.appendTo(document.body);
-      $(".popup").show();
-      $(".close").click(function () {
-        $(".popup").hide();
-        overlay.appendTo(document.body).remove();
-        return false;
-      });
-      $(".x").click(function () {
-        $(".popup").hide();
-        overlay.appendTo(document.body).remove();
-        return false;
-      });
-    });
-  </script>
-  <div class="popup">
-    <div class="cnt223" style="margin-left: 50px">
-      <h1 style="color: #d91900; opacity: 50%; text-align: center">
-        REMINDERS
-      </h1>
-      <p>
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Take
-        Your Pill
-        <br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Be Giving
-        as FUCK!!<br />
-        <br />
-        <br />
-        <a href="" class="close"
-          style="text-align: center; color: #d91900; opacity: 50%">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Close</a>
-      </p>
-    </div>
-  </div>
-  <section class="Message">
-    <div class="max-width">
-      <script>
-        $(function () {
-          var overlay = $('<div id="overlay"></div>');
-          overlay.show();
-          overlay.appendTo(document.body);
-          $(".popup").show();
-          $(".close").click(function () {
-            $(".popup").hide();
-            overlay.appendTo(document.body).remove();
-            return false;
-          });
-          $(".x").click(function () {
-            $(".popup").hide();
-            overlay.appendTo(document.body).remove();
-            return false;
-          });
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>For My #1</title>
+  </head>
+  <!-- Navigation bar -->
+  <header class="header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">GP Amy</a>
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu" />
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <!-- Menu -->
+    <nav class="nav">
+      <ul class="menu">
+        <li><a href="./vent.html">Vent</a></li>
+        <li><a href="./jobs.html">Jobs</a></li>
+        <!-- <li><a href="#">About</a></li> -->
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <!-- Reminder Pop-up JS + HTML -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.8.2.js"
+    ></script>
+    <script>
+      $(function () {
+        var overlay = $('<div id="overlay"></div>');
+        overlay.show();
+        overlay.appendTo(document.body);
+        $(".popup").show();
+        $(".close").click(function () {
+          $(".popup").hide();
+          overlay.appendTo(document.body).remove();
+          return false;
         });
-      </script>
-      <h2 style="text-align: center; color: white; margin-top: 50px;margin-left: 10px;">
-        <strong>For YOU, My girly pop!!</strong>
-      </h2>
-      <div class="main-content">
-        <div class="Main-Picture">
-          <img src="Files/Pic3.jpg" alt="" />
-          <!-- <video controls width="500" autoplay>
+        $(".x").click(function () {
+          $(".popup").hide();
+          overlay.appendTo(document.body).remove();
+          return false;
+        });
+      });
+    </script>
+    <div class="popup">
+      <div class="cnt223" style="margin-left: 50px">
+        <h1 style="color: #d91900; opacity: 50%; text-align: center">
+          REMINDERS
+        </h1>
+        <p>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Take
+          Your Pill
+          <br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Be Giving
+          as FUCK!!<br />
+          <br />
+          <br />
+          <a
+            href=""
+            class="close"
+            style="text-align: center; color: #d91900; opacity: 50%"
+            >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Close</a
+          >
+        </p>
+      </div>
+    </div>
+    <section class="Message">
+      <div class="max-width">
+        <script>
+          $(function () {
+            var overlay = $('<div id="overlay"></div>');
+            overlay.show();
+            overlay.appendTo(document.body);
+            $(".popup").show();
+            $(".close").click(function () {
+              $(".popup").hide();
+              overlay.appendTo(document.body).remove();
+              return false;
+            });
+            $(".x").click(function () {
+              $(".popup").hide();
+              overlay.appendTo(document.body).remove();
+              return false;
+            });
+          });
+        </script>
+        <h2
+          style="
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            margin-left: 10px;
+          "
+        >
+          <strong>For YOU, My girly pop!!</strong>
+        </h2>
+        <div class="main-content">
+          <div class="Main-Picture">
+            <img src="Files/Pic3.jpg" alt="" />
+            <!-- <video controls width="500" autoplay>
               <source src="/Files/MOV1.MP4" type="video/webm" />
               <source src="/Files/MOV1.MP4" type="video/mp4" />
               Sorry, your browser doesn't support embedded videos.
             </video> -->
+          </div>
+          <div class="Main-Message">
+            <p style="width: 100%; font-size: 2.2vh">
+              &emsp;AHHHHH girly popppp wrapped comes out tomorrowww!!!! I'm
+              just exicted because its like really giving and your whole website
+              is going to chnage for the day and its going to be amazing. Like
+              you!!! I cannot wait for this weekend because you're coming back
+              and you're going to have a good amount of time to relax and just
+              enjoy your breakkk.I know you're killing it with your finals and
+              if you need anything, which you prbably wont because youre and
+              academic weapon, just let me know. Keep being the smarty pants you
+              are and finish strong girly pop you got this!!! Have a great day
+              and if you need anything just ask!!
+              <br />Love Your Girly Pop!!!<br />
+              Edwardo 💗
+              <br />
+            </p>
+            <a style="margin-bottom: 5px" href="./Files/Letter 12-9.pdf"
+              >LETTER ;)</a
+            >
+            <h2>I WILL SEE YOU IN</h2>
+            <!-- Display the countdown timer in an element -->
+            <p style="margin-top: 5px" id="demo"></p>
+
+            <script>
+              // Set the date we're counting down to
+              var countDownDate = new Date("Dec 17, 2022 17:00:00").getTime();
+
+              // Update the count down every 1 second
+              var x = setInterval(function () {
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor(
+                  (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                );
+                var minutes = Math.floor(
+                  (distance % (1000 * 60 * 60)) / (1000 * 60)
+                );
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the result in the element with id="demo"
+                document.getElementById("demo").innerHTML =
+                  days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                  clearInterval(x);
+                  document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+              }, 1000);
+            </script>
+          </div>
+          <br />
+          <br />
         </div>
-        <div class="Main-Message">
-          <p style="width: 100%; font-size: 2.2vh">
-            &emsp;Just a photo of the two most giving people to ever exist. I can't wait to pop our pussys agian
-            and just have a good timeeeee. Im just so proud of you for getting your finals done and just being the
-            smarty pants that you are. I want to tell you this, It doesnt matter what people are doing now, it doesnt
-            matter what people say they're going to do. At the end of the day all you can do is look at their past and see
-            how they are now, if the change is drastic and negative and you don't talk to them, you made the right choice. Even
-            if the chnage was postiving it doesnt mean youve made a bad choice. Somebody always bing honest and loyal is very
-            hard to find, its one of the reasons you're one of the most important people to me because you're always honest and
-            I know youre going to be real with me. People do wild shit but at the end of the day all that matters is that you
-            stick to the choice you made, fuck whatever somebody is doing because most likely they're doing it because they have
-            no other choice. When I cut somebody off, if I see them or hear something about them I compare it to the version of
-            them I knew, and if I see a drastic negative chnage it just proves my point for me. You're better than this friend
-            and its their loss when they decided to become a different person because they lost an amazing person, they just didn't
-            realize it and thats on them. You deserve nothing but the best and know that. I hope you have a great PUSSY POPPING day girly
-            and if you need anything im right here.
-            <br />Love Your Girly Pop!!!<br />
-            Edwardo 💗
-            <br />
-          </p>
-          <a style="margin-bottom: 5px;" href="./Files/Letter 12-9.pdf">LETTER ;)</a>
-          <h2>I WILL SEE YOU IN</h2>
-          <!-- Display the countdown timer in an element -->
-          <p style="margin-top: 5px;"id="demo"></p>
-
-          <script>
-            // Set the date we're counting down to
-            var countDownDate = new Date("Dec 17, 2022 17:00:00").getTime();
-
-            // Update the count down every 1 second
-            var x = setInterval(function () {
-
-              // Get today's date and time
-              var now = new Date().getTime();
-
-              // Find the distance between now and the count down date
-              var distance = countDownDate - now;
-
-              // Time calculations for days, hours, minutes and seconds
-              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-              // Display the result in the element with id="demo"
-              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s ";
-
-              // If the count down is finished, write some text
-              if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
-              }
-            }, 1000);
-          </script>
-        </div>
-        <br />
-        <br />
       </div>
-    </div>
-  </section>
-</body>
+    </section>
+  </body>
 </html>
