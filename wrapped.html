@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="wrapped.css" />
+    <title>Girly Pop Wrapped</title>
+  </head>
+
+  <body style="background-color: pink">
+    <div id="title-card">
+      <h1>Girly Pop Wrapped 2022</h1>
+    </div>
+    
+    
+    <div id="container">
+      <!-- Card 1 -->
+      <div class="card" data-song="Song1.mp3">
+        <img src="./Wrapped/Pic1.jpg" alt="Album cover art" />
+        <h1>525,949 Minutes Being Giving</h1>
+        <h2>Ever since day one!</h2>
+        <p>Song: Star Walkin'</p>
+        <p>
+          Thank you for always being around and being there when i needed to
+          talk. thank you for making me the most giving version of myself that I
+          could ever be!!
+        </p>
+        <audio src="Song1.mp3" controls>
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <br />
+
+      <!-- Card 2 -->
+      <div class="card" data-song="Song1.mp3">
+        <img src="./Wrapped/Pic2.JPG" alt="Album cover art" />
+        <h1>
+          Being Smart isn't easy, you made me smarter as a person this year!
+        </h1>
+        <h2>So smart it...takes my breath away</h2>
+        <p>Song: Take My Breath</p>
+        <p>
+          You taught me so much this year and every since I met you I've learned
+          a lot. You're very smart abd that's just one of the many things I love
+          about you.
+        </p>
+
+        <audio src="Song2.mp3" controls>
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <br />
+
+      <!-- Card 3 -->
+      <div class="card" data-song="Song3.mp3">
+        <img src="./Wrapped/Pic9.jpg" alt="Album cover art" />
+        <h1>My Best Best Friend This Year Is.....</h1>
+        <h2>Girly Pop!!</h2>
+        <p>Song: Best Friends</p>
+        <p>
+          Finding a true best friend is hard but once we started talking and
+          then again I knew I found mine. You're honest and always keep it real
+          with me. You're so suportive and the best best friend every
+        </p>
+        <audio src="Song3.mp3" controls>
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <br />
+
+      <!-- Card 4 -->
+      <div class="card" data-song="Song4.mp3">
+        <img src="./Wrapped/Pic5.jpg" alt="Album cover art" />
+        <h1>Traveling is fun</h1>
+        <h2>Im Glad I did it to visit you!</h2>
+        <p>Song: I Like You</p>
+        <p>
+          The best part of these past few months was going to see you, it really
+          really made me happy and was a nice break from everything. I cant wait
+          to see you this weekend now!!
+        </p>
+        <audio src="Song4.mp3" controls>
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <br />
+
+      <!-- Card 5 -->
+      <div class="card" data-song="Song5.mp3">
+        <img src="./Wrapped/Pic6.jpg" alt="Album cover art" />
+        <h1>this year We built a lot</h1>
+        <h2>Most importantly we built our bond</h2>
+        <p>Song: Sunflower</p>
+        <p>
+          You're more than a friend to me, more than family, you're the most
+          important person to me and I love the bond that we have and grew over
+          the past year. Its unbreakable
+        </p>
+        <audio src="Song5.mp3" controls>
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <br />
+    </div>
+    <script>
+      const audioElement = document.querySelector("audio");
+
+      function playAudio() {
+        audioElement.play();
+      }
+
+      function pauseAudio() {
+        audioElement.pause();
+      }
+
+      let currentCard = 0;
+
+      function showNextCard() {
+        const cards = document.querySelectorAll(".card");
+        cards[currentCard].style.display = "none"; // hide the current card
+        currentCard = (currentCard + 1) % cards.length; // go to the next card, or loop back to the first card if at the end
+        cards[currentCard].style.display = "block"; // show the new current card
+        playSong(cards[currentCard]); // play the corresponding song for this card
+      }
+
+      setInterval(showNextCard, 30000); // change the displayed card every 1 second
+    </script>
+  </body>
+</html>
