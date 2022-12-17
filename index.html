@@ -6,15 +6,166 @@
     <link rel="stylesheet" href="./style.css" />
     <title>For My #1</title>
   </head>
-  <div class="Main-Message">
-    <p style="width: 100%; font-size: 2.2vh; color: white; margin: 5px">
-      These five selections are my top memories we made this year. I wish I
-      could do them all but theres just so many. I really enjoyed every second
-      with you Amy and I can't wait for even more memories. I love you!!
-      <br />Love<br />
-      Edwardo 💗
-      <br />
-    </p>
-    <a style="margin-bottom: 5px" href="./wrapped.html">GO TO GIRLY POP WRAPPED</a>
-  </div>
+  <!-- Navigation bar -->
+  <header class="header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">GP Amy</a>
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu" />
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <!-- Menu -->
+    <nav class="nav">
+      <ul class="menu">
+        <li><a href="./vent.html">Vent</a></li>
+        <li><a href="./jobs.html">Jobs</a></li>
+        <!-- <li><a href="#">About</a></li> -->
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <!-- Reminder Pop-up JS + HTML -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.8.2.js"
+    ></script>
+    <script>
+      $(function () {
+        var overlay = $('<div id="overlay"></div>');
+        overlay.show();
+        overlay.appendTo(document.body);
+        $(".popup").show();
+        $(".close").click(function () {
+          $(".popup").hide();
+          overlay.appendTo(document.body).remove();
+          return false;
+        });
+        $(".x").click(function () {
+          $(".popup").hide();
+          overlay.appendTo(document.body).remove();
+          return false;
+        });
+      });
+    </script>
+    <div class="popup">
+      <div class="cnt223" style="margin-left: 50px">
+        <h1 style="color: #d91900; opacity: 50%; text-align: center">
+          REMINDERS
+        </h1>
+        <p>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Take
+          Your Pill
+          <br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Be Giving
+          as FUCK!!<br />
+          <br />
+          <br />
+          <a
+            href=""
+            class="close"
+            style="text-align: center; color: #d91900; opacity: 50%"
+            >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Close</a
+          >
+        </p>
+      </div>
+    </div>
+    <section class="Message">
+      <div class="max-width">
+        <script>
+          $(function () {
+            var overlay = $('<div id="overlay"></div>');
+            overlay.show();
+            overlay.appendTo(document.body);
+            $(".popup").show();
+            $(".close").click(function () {
+              $(".popup").hide();
+              overlay.appendTo(document.body).remove();
+              return false;
+            });
+            $(".x").click(function () {
+              $(".popup").hide();
+              overlay.appendTo(document.body).remove();
+              return false;
+            });
+          });
+        </script>
+        <h2
+          style="
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            margin-left: 10px;
+          "
+        >
+          <strong>For YOU, My girly pop!!</strong>
+        </h2>
+        <div class="main-content">
+          <div class="Main-Picture">
+            <img src="./Wrapped/Pictures/Pic7.JPG" alt="" />
+            <!-- <video controls width="500" autoplay>
+              <source src="/Files/MOV1.MP4" type="video/webm" />
+              <source src="/Files/MOV1.MP4" type="video/mp4" />
+              Sorry, your browser doesn't support embedded videos.
+            </video> -->
+          </div>
+          <div class="Main-Message">
+            <p style="width: 100%; font-size: 2.2vh; color: white; margin: 5px">
+              &emsp;I say girly pop wrapped was good, and again I am sorry about that one song
+              I did not know that is what it meant. Im very Pussy Popping Proud of you because 
+              you did all your finals and are done!!!! I cant wait to see you when you come home
+              and I will be right here for whenever you leave so we can talk on the phone for 
+              the drive back. I was thinking maybe we can have a foodie fridsy next week or 
+              anytime that you're home. And the last thing I have is we should get your
+              insurance stuff started so if you want to come over one day, I can ask 
+              father what day, and we can get that all set up for you!! Have a giving 
+              ass day and I just know you're going to be a giving ass driver!!
+              <br />Love your best best friend<br />
+              Edwardo 💗
+              <br />
+              P.S. Dont forget your face creams and the smaller things that may be in your
+              shower bag and let me know if you need helo with anything!!
+            </p>
+            <a style="margin-bottom: 5px" href="./Wrapped/wrapped.html">Girly Pop Wrapped 2022</a>
+            <h2>I WILL SEE YOU IN</h2>
+            <!-- Display the countdown timer in an element -->
+            <p style="margin-top: 5px" id="demo"></p>
+
+            <script>
+              // Set the date we're counting down to
+              var countDownDate = new Date("Dec 17, 2022 17:00:00").getTime();
+
+              // Update the count down every 1 second
+              var x = setInterval(function () {
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor(
+                  (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                );
+                var minutes = Math.floor(
+                  (distance % (1000 * 60 * 60)) / (1000 * 60)
+                );
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the result in the element with id="demo"
+                document.getElementById("demo").innerHTML =
+                  days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                  clearInterval(x);
+                  document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+              }, 1000);
+            </script>
+          </div>
+          <br />
+          <br />
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
