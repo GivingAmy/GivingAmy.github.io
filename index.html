@@ -1,171 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>For My #1</title>
-  </head>
-  <!-- Navigation bar -->
-  <header class="header">
-    <!-- Logo -->
-    <a href="index.html" class="logo">GP Amy</a>
-    <!-- Hamburger icon -->
-    <input class="side-menu" type="checkbox" id="side-menu" />
-    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-    <!-- Menu -->
-    <nav class="nav">
-      <ul class="menu">
-        <li><a href="./vent.html">Vent</a></li>
-        <li><a href="./jobs.html">Jobs</a></li>
-        <!-- <li><a href="#">About</a></li> -->
-      </ul>
-    </nav>
-  </header>
-  <body>
-    <!-- Reminder Pop-up JS + HTML -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A message for an amazing person" />
+    <meta name="author" content="Edward Wynman" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Best Best Friends</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
     <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.8.2.js"
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
     ></script>
-    <script>
-      $(function () {
-        var overlay = $('<div id="overlay"></div>');
-        overlay.show();
-        overlay.appendTo(document.body);
-        $(".popup").show();
-        $(".close").click(function () {
-          $(".popup").hide();
-          overlay.appendTo(document.body).remove();
-          return false;
-        });
-        $(".x").click(function () {
-          $(".popup").hide();
-          overlay.appendTo(document.body).remove();
-          return false;
-        });
-      });
-    </script>
-    <div class="popup">
-      <div class="cnt223" style="margin-left: 50px">
-        <h1 style="color: #d91900; opacity: 50%; text-align: center">
-          REMINDERS
-        </h1>
-        <p>
-          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Take
-          Your Pill
-          <br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Be Giving
-          as FUCK!!<br />
-          <br />
-          <br />
-          <a
-            href=""
-            class="close"
-            style="text-align: center; color: #d91900; opacity: 50%"
-            >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Close</a
-          >
-        </p>
-      </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+
+  </head>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">
+      <a class="nav-link js-scroll-trigger" href="#page-top" style="color:white;">AMY</a>
     </div>
-    <section class="Message">
-      <div class="max-width">
-        <script>
-          $(function () {
-            var overlay = $('<div id="overlay"></div>');
-            overlay.show();
-            overlay.appendTo(document.body);
-            $(".popup").show();
-            $(".close").click(function () {
-              $(".popup").hide();
-              overlay.appendTo(document.body).remove();
-              return false;
-            });
-            $(".x").click(function () {
-              $(".popup").hide();
-              overlay.appendTo(document.body).remove();
-              return false;
-            });
-          });
-        </script>
-        <h2
-          style="
-            text-align: center;
-            color: white;
-            margin-top: 50px;
-            margin-left: 10px;
-          "
-        >
-          <strong>For YOU, My girly pop!!</strong>
-        </h2>
-        <div class="main-content">
-          <div class="Main-Picture">
-            <img src="./Wrapped/Pictures/Pic7.JPG" alt="" />
-            <!-- <video controls width="500" autoplay>
-              <source src="/Files/MOV1.MP4" type="video/webm" />
-              <source src="/Files/MOV1.MP4" type="video/mp4" />
-              Sorry, your browser doesn't support embedded videos.
-            </video> -->
-          </div>
-          <div class="Main-Message">
-            <p style="width: 100%; font-size: 2.2vh; color: white; margin: 5px">
-              &emsp;I say girly pop wrapped was good, and again I am sorry about that one song
-              I did not know that is what it meant. Im very Pussy Popping Proud of you because 
-              you did all your finals and are done!!!! I cant wait to see you when you come home
-              and I will be right here for whenever you leave so we can talk on the phone for 
-              the drive back. I was thinking maybe we can have a foodie fridsy next week or 
-              anytime that you're home. And the last thing I have is we should get your
-              insurance stuff started so if you want to come over one day, I can ask 
-              father what day, and we can get that all set up for you!! Have a giving 
-              ass day and I just know you're going to be a giving ass driver!!
-              <br />Love your best best friend<br />
-              Edwardo 💗
-              <br />
-              P.S. Dont forget your face creams and the smaller things that may be in your
-              shower bag and let me know if you need helo with anything!!
-            </p>
-            <a style="margin-bottom: 5px" href="./Wrapped/wrapped.html">Girly Pop Wrapped 2022</a>
-            <h2>I WILL SEE YOU IN</h2>
-            <!-- Display the countdown timer in an element -->
-            <p style="margin-top: 5px" id="demo"></p>
-
-            <script>
-              // Set the date we're counting down to
-              var countDownDate = new Date("Dec 17, 2022 17:00:00").getTime();
-
-              // Update the count down every 1 second
-              var x = setInterval(function () {
-                // Get today's date and time
-                var now = new Date().getTime();
-
-                // Find the distance between now and the count down date
-                var distance = countDownDate - now;
-
-                // Time calculations for days, hours, minutes and seconds
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor(
-                  (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-                );
-                var minutes = Math.floor(
-                  (distance % (1000 * 60 * 60)) / (1000 * 60)
-                );
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                // Display the result in the element with id="demo"
-                document.getElementById("demo").innerHTML =
-                  days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-                // If the count down is finished, write some text
-                if (distance < 0) {
-                  clearInterval(x);
-                  document.getElementById("demo").innerHTML = "EXPIRED";
-                }
-              }, 1000);
-            </script>
-          </div>
-          <br />
-          <br />
-        </div>
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li><a href="#page-top">Home</a></li>
+        <li><a href="#picofday">Picture of The Day</a></li>
+        <li><a href="#message">Todays Message</a></li>
+        <li class="services"><a href="#jobs">Jobs</a></li>
+        <li><a href="#vent">Vent</a></li>
+        
       </div>
+    </ul>
+  </nav>
+  <body style="background-color: pink;">
+    <div class="container-fluid p-0">
+      <!-- Landing-->
+      <section class="resume-section" id="page-top">
+        <div class="resume-section-content">
+          <h1 class="mb-0">
+            <span class="text-primary" style="color: white !important">Good Moring Gilry Pop
+          </h1>
+          <br><br>
+          <!-- Reminders -->
+          <div class="reminders">
+            <h2 style="color: white !important; text-decoration: underline;">Today's Reminders</h2>
+            <ul>
+              <li style="color: white !important">CAR INSURANCE</li>
+              <li style="color: white !important">Take Your Pills</li>
+              <li style="color: white !important">Be Giving as Fuck</li>
+            </ul>
+          </div>
+          <div class="countdown-timer">
+            <h2 style="color: white !important; text-decoration: underline; font-size: 18px;font-weight: bold; margin-bottom: 10px;">I See You In</h2>
+            <div id="countdown"></div>
+          </div>
+          <!-- Current date -->
+          <div class="current-date">
+            <h2 style="color: white !important; text-decoration: underline; font-size: 18px;font-weight: bold; margin-bottom: 10px;">Current Date</h2>
+            <div id="current-date"></div>
+          </div>
+        </div>
     </section>
+    <script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in the element with id="countdown"
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+
+  // Display the current date
+  var today = new Date();
+  var dd = String(today.getDate()).padStart(2, '0');
+  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+  var yyyy = today.getFullYear();
+
+  today = mm + '/' + dd + '/' + yyyy;
+  document.getElementById("current-date").innerHTML = today;
+</script>
+    <!-- Picture of the Day -->
+    <section class="resume-section" id="picofday">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Picture of the Day</h2>
+          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <img src="./Wrapped/Pictures/Pic3.jpg" alt="Picture of the Day">
+                <!-- <video controls width="500" autoplay>
+                <source src="/Files/MOV1.MP4" type="video/webm" />
+                <source src="/Files/MOV1.MP4" type="video/mp4" />
+                Sorry, your browser doesn't support embedded videos.
+                </video> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="m-0" />
+      <!-- Todays Message -->
+      <section class="resume-section" id="message">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Todays Message</h2>
+          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+              <p style="width: 100%; font-size: 2.2vh; color: white; margin: 5px">
+              Welcome, to your new website!! You have reminders at the top with the date 
+              and a hello. Then a section for the picture of the day, this message, under
+              this is where jobs will be, and then the vent space. It's finally my last 
+              day of school and its the week of giving, so you get a choice. Im giving 
+              you the hoodie and along with it would you like a christmas gift or should 
+              that wait till another time? Whatever you choose let me know and we can 
+              make it happen. The one big thing is the car insurance, I will get the 
+              price and options together again and make a plan so you can smoothly 
+              change it. Also with the job thing, if you still want that website I can 
+              do it for you and if you want any help with job searching please feel 
+              free to ask!! Besides that I hope you have a pussy popping day!!
+              <br />Love your best best friend forever<br />
+              Edwardo 💗
+            </p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Jobs -->
+      <section class="resume-section" id="jobs">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Jobs For You</h2>
+          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+              <p style="width: 100%; font-size: 2.2vh; color: white; margin: 5px">
+                Starting soon I will be psoting any jobs that I find good here, I will 
+                include the apply button and a short description of each one.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- vent -->
+      <section class="resume-section" id="vent">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Vent</h2>
+          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+              <!-- Add the text box -->
+              <textarea class="vent-box" placeholder="Sometimes you just need to vent"></textarea><br>
+              <!-- Add the button -->
+              <button class="goodbye-button" onclick="clearText()">Goodbye</button>
+              <!-- Add a script to clear the text in the text box when the button is pressed -->
+              <script>
+              function clearText() {
+                document.querySelector('.vent-box').value = "";
+              }
+              </script>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="scripts.js"></script>
   </body>
 </html>
