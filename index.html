@@ -1,215 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A message for an amazing person" />
-    <meta name="author" content="Edward Wynman" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Best Best Friends</title>
 
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A message for an amazing person" />
+  <meta name="author" content="Edward Wynman" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Best Best Friends</title>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
 
-  </head>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <!-- LOGO -->
-    <div class="logo">
-      <a class="nav-link js-scroll-trigger" href="#page-top" style="color:white;">AMY</a>
+</head>
+<!-- Navigation -->
+<nav class="navbar">
+  <!-- LOGO -->
+  <div class="logo">
+    <a class="nav-link js-scroll-trigger" href="#page-top" style="color:white;">AMY</a>
+  </div>
+  <!-- NAVIGATION MENU -->
+  <ul class="nav-links">
+    <!-- USING CHECKBOX HACK -->
+    <input type="checkbox" id="checkbox_toggle" />
+    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    <!-- NAVIGATION MENUS -->
+    <div class="menu">
+      <li><a href="#page-top">Home</a></li>
+      <li><a href="#picofday">Picture of The Day</a></li>
+      <li><a href="#message">Todays Message</a></li>
+      <li class="services"><a href="#jobs">Jobs</a></li>
+      <li><a href="#vent">Vent</a></li>
+      <li><a href="./Wrapped/wrapped.html">Girly Popped Wrapped</a></li>
+
     </div>
-    <!-- NAVIGATION MENU -->
-    <ul class="nav-links">
-      <!-- USING CHECKBOX HACK -->
-      <input type="checkbox" id="checkbox_toggle" />
-      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-      <!-- NAVIGATION MENUS -->
-      <div class="menu">
-        <li><a href="#page-top">Home</a></li>
-        <li><a href="#picofday">Picture of The Day</a></li>
-        <li><a href="#message">Todays Message</a></li>
-        <li class="services"><a href="#jobs">Jobs</a></li>
-        <li><a href="#vent">Vent</a></li>
-        
-      </div>
-    </ul>
-  </nav>
-  <body style="background-color: pink;">
-    <div class="container-fluid p-0">
-      <!-- Landing-->
-      <section class="resume-section" id="page-top">
-        <div class="resume-section-content">
-          <h1 class="mb-0">
-            <span class="text-primary" style="color: white !important">Good Moring to THe Worlds Best Cat Mom
-          </h1>
-          <br><br>
-          <!-- Reminders -->
-          <div class="reminders">
-            <h2 style="color: white !important; text-decoration: underline;">Today's Reminders</h2>
-            <ul>
-              <!-- <li style="color: white !important">CAR INSURANCE</li> -->
-              <li style="color: white !important">Take Your Pills</li>
-              <li style="color: white !important">Be Giving as Fuck</li>
-            </ul>
-          </div>
-          <!-- <div class="countdown-timer">
+  </ul>
+</nav>
+
+<body style="background-color: pink;">
+  <div class="container-fluid p-0">
+    <!-- Landing-->
+    <section class="resume-section" id="page-top">
+      <div class="resume-section-content">
+        <h1 class="mb-0">
+          <span class="text-primary" style="color: white !important">Good Moring to My Best Best Friend</span>
+        </h1>
+        <br><br>
+        <!-- Reminders -->
+        <div class="reminders">
+          <h2 style="color: white !important; text-decoration: underline;">Today's Reminders</h2>
+          <ul>
+            <!-- <li style="color: white !important">CAR INSURANCE</li> -->
+            <li style="color: white !important">Take Your Pills</li>
+            <li style="color: white !important">Be Giving as Fuck</li>
+          </ul>
+        </div>
+        <!-- <div class="countdown-timer">
             <h2 style="color: white !important; text-decoration: underline; font-size: 18px;font-weight: bold; margin-bottom: 10px;">I See You In</h2>
             <div id="countdown"></div>
           </div> -->
-          <!-- Current date -->
-          <div class="current-date">
-            <h2 style="color: white !important; text-decoration: underline; font-size: 18px;font-weight: bold; margin-bottom: 10px;">Today's Date</h2>
-            <div id="current-date"></div>
-          </div>
+        <!-- Current date -->
+        <div class="current-date">
+          <h2
+            style="color: white !important; text-decoration: underline; font-size: 18px;font-weight: bold; margin-bottom: 10px;">
+            Today's Date</h2>
+          <div id="current-date"></div>
         </div>
+      </div>
     </section>
     <script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+      // Set the date we're counting down to
+      var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
 
-  // Update the count down every 1 second
-  var x = setInterval(function() {
+      // Update the count down every 1 second
+      var x = setInterval(function () {
 
-    // Get today's date and time
-    var now = new Date().getTime();
+        // Get today's date and time
+        var now = new Date().getTime();
 
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Display the result in the element with id="countdown"
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
+        // Display the result in the element with id="countdown"
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
 
-    // If the count down is finished, write some text
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("countdown").innerHTML = "EXPIRED";
-    }
-  }, 1000);
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+      }, 1000);
 
-  // Display the current date
-  var today = new Date();
-  var dd = String(today.getDate()).padStart(2, '0');
-  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-  var yyyy = today.getFullYear();
+      // Display the current date
+      var today = new Date();
+      var dd = String(today.getDate()).padStart(2, '0');
+      var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+      var yyyy = today.getFullYear();
 
-  today = mm + '/' + dd + '/' + yyyy;
-  document.getElementById("current-date").innerHTML = today;
-</script>
+      today = mm + '/' + dd + '/' + yyyy;
+      document.getElementById("current-date").innerHTML = today;
+    </script>
     <!-- Picture of the Day -->
     <section class="resume-section" id="picofday">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Picture of the Day</h2>
-          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <img src="./Files/Pic6.jpg" alt="Picture of the Day">
-                <!-- <video controls width="500" autoplay>
+      <div class="resume-section-content">
+        <h2 class="mb-5">Picture of the Day</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <img src="./Files/Pic1.jpg" alt="Picture of the Day">
+            <!-- <video controls width="500" autoplay>
                 <source src="/Files/MOV1.MP4" type="video/webm" />
                 <source src="/Files/MOV1.MP4" type="video/mp4" />
                 Sorry, your browser doesn't support embedded videos.
                 </video> -->
-            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <hr class="m-0" />
-      <!-- Todays Message -->
-      <section class="resume-section" id="message">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Todays Message</h2>
-          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-              <p style="width: 100%; font-size: 2.2vh; color: white; margin: 5px">
-              I really am juts chillin like lucy bear sometimes, shes a mood and a half.
-              HELLOOOO GIRLYYYY!!! Aka the most giving ass driver that there is out 
-              there. It was really really fun to see you again I feel like its been 
-              foreverrr. Im going to work on all these places being crowded becasue thats 
-              not giving and girly pop does not deserve to wait. I hope you're feeling 
-              better and can breathe normally and ofc if there is anything I can do for you 
-              just let me knowww!! Have a great pussy popping day girly pop!!
+    <hr class="m-0" />
+    <!-- Todays Message -->
+    <section class="resume-section" id="message">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Todays Message</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <p style="width: 100%; font-size: 2.2vh; color: white; margin: 5px">
+              Hiiii girlyyy popppppp!! I know you mentioed that today is you and Sallys
+              Christmas and I just want to say that I hope the two of you have a giving
+              and amazing day today and if either of you need anything just let me know!!
+              So as we kow today is my first day at the mall so expect all the tea and
+              any news later today. Theres one more thing I quickly want to mention. So
+              I'm not too sure if you've noticed but I want to just bring this up with
+              you just so I don't make you uncomftable with anyhting. As you know I love you
+              and you're the best person ever. If you've noticed I've been saying ily or love
+              you when I say goodnight and I didn't say it the other night just because I want
+              to make sure it's not somthing that bothers you. I just wanted you to know that
+              I do love you and I do mean it and if it's okay with you that I say it to you. I 
+              just wanted to bring it up because I don't want to say it if you don't want me 
+              too, I just want you to know I mean it. Have a giving pussy popping day girly 
+              pop and Merry Christmas!! Sleigh Away!! 🛷🎄
               <br>
               <br />Love your best best friend forever<br />
               Edwardo 💗
+              <br><br>
+              <p>Also sorry if I've been annoying latley I do apoglize</p>
             </p>
-              </p>
-            </div>
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 
-      <!-- Jobs -->
-      <section class="resume-section" id="jobs">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Jobs For You</h2>
-          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-              <p style="width: 100%; font-size: 2.2vh; color: white; margin: 5px">
-                Starting soon I will be psoting any jobs that I find good here, I will 
-                include the apply button and a short description of each one.
-              </p>
-            </div>
+    <!-- Jobs -->
+    <section class="resume-section" id="jobs">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Jobs For You</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <p style="width: 100%; font-size: 2.2vh; color: white; margin: 5px">
+              Starting soon I will be psoting any jobs that I find good here, I will
+              include the apply button and a short description of each one.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- vent -->
-      <section class="resume-section" id="vent">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Vent</h2>
-          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-              <!-- Add the text box -->
-              <textarea class="vent-box" placeholder="Sometimes you just need to vent"></textarea><br>
-              <!-- Add the button -->
-              <button class="goodbye-button" onclick="clearText()">Goodbye</button>
-              <!-- Add a script to clear the text in the text box when the button is pressed -->
-              <script>
+    <!-- vent -->
+    <section class="resume-section" id="vent">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Vent</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <!-- Add the text box -->
+            <textarea class="vent-box" placeholder="Sometimes you just need to vent"></textarea><br>
+            <!-- Add the button -->
+            <button class="goodbye-button" onclick="clearText()">Goodbye</button>
+            <!-- Add a script to clear the text in the text box when the button is pressed -->
+            <script>
               function clearText() {
                 document.querySelector('.vent-box').value = "";
               }
-              </script>
-            </div>
+            </script>
           </div>
         </div>
-      </section>
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="scripts.js"></script>
-  </body>
+      </div>
+    </section>
+  </div>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="scripts.js"></script>
+</body>
+
 </html>
